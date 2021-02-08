@@ -1,0 +1,62 @@
+.container-main {
+  background-color: rgba(225, 225, 225, 0.2);
+  height: 800px;
+}
+.main-wrapper {
+  background: rgba(115, 157, 157, 0.45);
+}
+.main-content-padding {
+  padding-top: 75px;
+  padding-right: 114px;
+  padding-bottom: 114px;
+  padding-left: 84px;
+
+  display: flex;
+  flex-direction: row;
+}
+.public-keys {
+  font-family: Noto Sans JP;
+  font-style: 300;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 1.459;
+  color: #000000;
+  padding-top: 12px;
+  padding-left: 71px;
+  //   text-align: center;
+  //   display: inline-block;
+  width: 266px;
+  height: 56px;
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 10px;
+
+  margin-bottom: 9px;
+}
+.public-keys-wrapper {
+  width: 266px;
+  height: 546px;
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 5px;
+  outline: transparent;
+}
+.messages {
+  font-family: Noto Sans JP;
+  font-style: 300;
+  font-weight: 200;
+  font-size: 24px;
+  line-height: 1.459;
+  color: #000000;
+  padding-top: 12px;
+  padding-left: 38px;
+
+  //   text-align: center;
+  //   display: inline-block;
+
+  width: 324px;
+  height: 56px;
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 10px;
+}
+.messages-section {
+  margin-left: 58px;
+}

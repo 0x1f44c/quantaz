@@ -1,0 +1,39 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.header-logo {
+  font-family: Noto Sans JP;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 1.254;
+  color: rgba(0, 0, 0, 0.5);
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 11px;
+  margin-bottom: 6px;
+
+  display: block;
+  width: 86px;
+  height: 86px;
+  border-radius: 50%;
+  background-color: #f9f9f9;
+}
+.header-input {
+  width: 466px;
+  height: 40px;
+
+  background: #ffffff;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  border-radius: 5px;
+
+  margin-left: 510px;
+}
+.menu-btn {
+  width: 45px;
+  height: 28px;
+  margin-left: 65px;
+  outline: transparent;
+}
