@@ -1,12 +1,10 @@
 .copyright {
-  font-family: Noto Sans JP;
   font-weight: 100;
   font-size: 12px;
   line-height: 1.334;
   color: #000000;
 }
 .footer-logo {
-  font-family: Noto Sans JP;
   font-weight: 200;
   font-size: 18px;
   line-height: 1.389;
@@ -35,4 +33,43 @@
   position: absolute;
   right: 0;
   top: 20px;
+}
+
+.footer-navigation {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.389;
+  color: #000000;
+}
+.navigation-list {
+  position: relative;
+  display: flex;
+  margin-left: 84px;
+  margin-top: 9px;
+}
+.navigation-list::before {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 25px;
+  left: 101px;
+
+  background: #000000;
+}
+.navigation-list::after {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 25px;
+  left: 240px;
+
+  background: #000000;
+}
+.navigation-list-item:not(:last-child) {
+  margin-right: 91px;
+}
+.footer-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
 }

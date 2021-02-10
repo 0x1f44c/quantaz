@@ -15,7 +15,7 @@
             <a class="link header-logo" href="index.html" aria-label="logo of privacy guard">PG</a>
         </h1>
         <input class="header-input">
-        <button class="menu-btn" type="button" aria-label="menu button"></button>
+        <button class=" menu-btn" type="button" aria-label="menu button"></button>
     </header>
     <!--main-->
     <div class="main-wrapper">
@@ -23,20 +23,28 @@
         <div class="main-content-padding">
         <section>
             <h2 class="public-keys">public keys</h2>
-            <div class="public-keys-wrapper"></div> <!--make ul+ li-->
+            
+            <ul class="public-keys-wrapper list">
+                <li class="public-keys-item">0x2345ef721</li>
+                <li class="public-keys-item">0x76521e72</li>
+            </ul>
         </section>
         <section class="messages-section">
             <h2 class="messages">messages</h2>
-                <ul class="list">
-                    <li >
-                        <p>0x7852e1f</p>
-                        <input type="text">
+                <ul class="list messages-wrapper">
+                    <li class="message-item">
+                        <p class="key-in-message key-in-message-1">0x7852e1f</p>
+                        <p class="text-message" >
                     </li>
-                    <li>
-                        <p>0x7852e1f</p>
-                        <input type="text">
+                    <li class="message-item">
+                        <p class="key-in-message key-in-message-2">0x7852e1f</p>
+                        <p  class="text-message" >
                     </li>
                 </ul>
+                <div class="message-input-div"> 
+                   <input class="message-input" type="text">
+                   <button class="message-btn" type="button" aria-label="send message button">send</button>
+                </div>
         </section>
         </div>
     </main>
@@ -46,20 +54,22 @@
 
 <a class="footer-logo" href="index.html" aria-label="logo of privacy guard">PG</a>
 
-<nav>
-<ul class="list">
-    <li >
+<div class="footer-flex">
+<nav class="footer-navigation">
+<ul class="list navigation-list">
+    <li class="navigation-list-item">
         <a href="about.html" aria-label="about us">About</a>
     </li>
-    <li>
+    <li class="navigation-list-item">
         <a href="licence.html" aria-label="licence">Licence</a>
     </li>
-    <li>
+    <li class="navigation-list-item">
         <a href="" aria-label="conect us">Conect us</a>
     </li>
 </ul>
 </nav>
 <p class="copyright">Copyright 2021 Privacy Guard Messages</p>
+</div>
 </footer>
 
 </body>
