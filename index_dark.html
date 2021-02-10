@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Guard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/dark_theme.min.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
+
+</head>
+
+<body class="container-for-padding">
+    <!--header-->
+    <header class="container header">
+        <h1>
+            <a class="link header-logo" href="index.html" aria-label="logo of privacy guard">PG</a>
+        </h1>
+        <input class="header-input">
+        <button class=" menu-btn" type="button" aria-label="menu button">
+            <svg class=" menu-svg" width="50px" height="50px">
+                <use class="icon-menu" href="./sprite.svg#icon-menu-btn">
+                </use>
+            </svg>
+        </button>
+    </header>
+    <!--main-->
+    <div class="main-wrapper">
+        <main class="container-main container ">
+            <div class="main-content-padding">
+                <section>
+                    <h2 class="public-keys">public keys</h2>
+
+                    <ul class="public-keys-wrapper list">
+                        <li class="public-keys-item">0x2345ef721</li>
+                        <li class="public-keys-item">0x76521e72</li>
+                    </ul>
+                </section>
+                <section class="messages-section">
+                    <h2 class="messages">messages</h2>
+                    <ul class="list messages-wrapper">
+                        <li class="message-item">
+                            <p class="key-in-message key-in-message-1">0x7852e1f</p>
+                            <p class="text-message">
+                        </li>
+                        <li class="message-item">
+                            <p class="key-in-message key-in-message-2">0x7852e1f</p>
+                            <p class="text-message">
+                        </li>
+                    </ul>
+                    <div class="message-input-div">
+                        <input class="message-input" type="text">
+                        <button class="message-btn" type="button" aria-label="send message button">send</button>
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
+    <!--footer-->
+    <footer class="container footer-lines">
+
+        <a class="footer-logo" href="index.html" aria-label="logo of privacy guard">PG</a>
+
+        <div class="footer-flex">
+            <nav class="footer-navigation">
+                <ul class="list navigation-list">
+                    <li class="navigation-list-item">
+                        <a href="about.html" aria-label="about us">About</a>
+                    </li>
+                    <li class="navigation-list-item">
+                        <a href="licence.html" aria-label="licence">Licence</a>
+                    </li>
+                    <li class="navigation-list-item">
+                        <a href="" aria-label="conect us">Conect us</a>
+                    </li>
+                </ul>
+            </nav>
+            <p class="copyright">Copyright 2021 Privacy Guard Messages</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

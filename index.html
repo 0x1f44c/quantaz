@@ -6,7 +6,9 @@
     <title>Privacy Guard</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.css" />
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/white_theme.min.css" />
     <link rel="stylesheet" href="./css/main.min.css" />
+    
 </head>
 <body class="container-for-padding">
     <!--header-->
@@ -15,7 +17,12 @@
             <a class="link header-logo" href="index.html" aria-label="logo of privacy guard">PG</a>
         </h1>
         <input class="header-input">
-        <button class=" menu-btn" type="button" aria-label="menu button"></button>
+        <button  class=" menu-btn" type="button" aria-label="menu button">
+            <svg class=" menu-svg" width="50px" height="50px">
+                <use class="icon-menu" href="./sprite.svg#icon-menu-btn">
+                </use>
+            </svg>
+        </button>
     </header>
     <!--main-->
     <div class="main-wrapper">
