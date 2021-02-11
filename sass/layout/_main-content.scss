@@ -41,13 +41,26 @@
   font-size: 20px;
   line-height: 1.35;
 
-  padding: 13px 27px 13px 39px;
+  padding: 13px 27px 13px 16px;
 
   color: #000000;
 }
 .public-keys-item:not(:last-child) {
   margin-bottom: 16px;
 }
+.public-keys-item > svg {
+  fill: rgba(0, 0, 0, 0.5);
+  margin-right: 6px;
+
+  transition-property: all;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.public-keys-item:hover > svg {
+  fill: rgba(39, 68, 84, 0.51);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
 .messages {
   font-style: 300;
   font-weight: 200;

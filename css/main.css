@@ -83,17 +83,17 @@ button:focus {
 .menu-btn {
   width: 50px;
   height: 50px;
-  margin-left: 65px;
+  margin-left: 64px;
   border-style: none;
-  background: #fff;
+  background: transparent;
 }
 
-.icon-menu {
+.menu-btn > svg {
   fill: #c4c4c4;
 }
 
-.menu-btn:active {
-  fill: rgba(39, 68, 84, 0.51);
+.menu-btn:active > svg {
+  fill: #424d54;
 }
 
 .container-main {
@@ -138,12 +138,25 @@ button:focus {
   font-weight: 400;
   font-size: 20px;
   line-height: 1.35;
-  padding: 13px 27px 13px 39px;
+  padding: 13px 27px 13px 16px;
   color: #000000;
 }
 
 .public-keys-item:not(:last-child) {
   margin-bottom: 16px;
+}
+
+.public-keys-item > svg {
+  fill: rgba(0, 0, 0, 0.5);
+  margin-right: 6px;
+  transition-property: all;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.public-keys-item:hover > svg {
+  fill: rgba(39, 68, 84, 0.51);
+  border: 1px solid rgba(255, 255, 255, 0.4);
 }
 
 .messages {
