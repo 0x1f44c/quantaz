@@ -14,15 +14,24 @@
   display: flex;
   flex-direction: row;
 }
+// .public-keys-section {
+//   // display: flex;
+//   // flex-direction: column;
+// }
+
 .public-keys {
   font-style: 300;
   font-weight: 300;
   font-size: 24px;
   line-height: 1.459;
   color: #000000;
-  padding-top: 12px;
-  padding-left: 71px;
+  // padding-top: 12px;
+  // padding-left: 71px;
 
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
   width: 266px;
   height: 56px;
   background: rgba(255, 255, 255, 0.6);
@@ -31,7 +40,7 @@
   margin-bottom: 9px;
 }
 .public-keys-wrapper {
-  width: 266px;
+  max-width: 266px;
   height: 546px;
   background: rgba(255, 255, 255, 0.4);
   border-radius: 5px;
@@ -41,9 +50,10 @@
   font-size: 20px;
   line-height: 1.35;
 
-  padding: 13px 27px 13px 16px;
+  padding: 13px 16px 13px 16px;
 
   color: #000000;
+  box-sizing: border-box;
 }
 .public-keys-item:not(:last-child) {
   margin-bottom: 16px;
@@ -51,14 +61,6 @@
 .public-keys-item > svg {
   fill: rgba(0, 0, 0, 0.5);
   margin-right: 6px;
-
-  transition-property: all;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.public-keys-item:hover > svg {
-  fill: rgba(39, 68, 84, 0.51);
-  border: 1px solid rgba(255, 255, 255, 0.4);
 }
 
 .messages {
@@ -67,10 +69,15 @@
   font-size: 24px;
   line-height: 1.459;
   color: #000000;
-  padding-top: 12px;
-  padding-left: 38px;
+  // padding-top: 12px;
 
-  width: 324px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  box-sizing: border-box;
+
+  max-width: 300px;
+  padding-left: 40px;
   height: 56px;
   background: rgba(255, 255, 255, 0.6);
   border-radius: 10px;
@@ -91,6 +98,7 @@
   padding-bottom: 67px;
 
   display: flex;
+  box-sizing: border-box;
 }
 .message-item {
   width: 304px;
@@ -151,6 +159,7 @@
 .message-input {
   width: 648px;
   height: 56px;
+  box-sizing: border-box;
 
   background: rgba(255, 254, 254, 0.8);
   border-radius: 10px;
@@ -175,8 +184,7 @@
   background: rgba(0, 0, 0, 0.5);
   border-radius: 50px;
 
-  font-family: Noto Sans JP;
-  font-weight: 200;
+  font-weight: 100;
   font-size: 24px;
   line-height: 1.375;
 

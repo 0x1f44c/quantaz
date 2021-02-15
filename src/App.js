@@ -19,8 +19,8 @@ class App extends Component {
         <div class="main-wrapper">
           <main class="container-main container ">
             <div class="main-content-padding">
-              <section>
-                <h2 class="public-keys">public keys</h2>
+              <section class="public-keys-section">
+                <h2 class="public-keys">public keys </h2>
                 <ul class="public-keys-wrapper list">
                   <li class="public-keys-item">
                     <svg width="14px" height="14px">
