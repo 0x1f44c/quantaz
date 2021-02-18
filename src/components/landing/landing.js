@@ -18,8 +18,8 @@ class Landing extends Component {
                 <use className="icon-menu" href="./sprite.svg#icon-menu-btn"></use>
               </svg>
             </button>
-
           </header>
+
           <main class="main-landing-container">
             <a class="cool-button" href="/msg">message</a>
             <section class="benefits-section">
@@ -39,8 +39,6 @@ class Landing extends Component {
                   <p></p>
                 </li>
               </ul>
-
-
             </section>
           </main>
         </div>

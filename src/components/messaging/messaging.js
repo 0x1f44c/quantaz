@@ -15,6 +15,7 @@ class Messaging extends Component {
               <use className="icon-menu" href="./sprite.svg#icon-menu-btn"></use>
             </svg>
           </button>
+          <button class="day-night-btn"></button>
         </header>
         <div className="main-wrapper">
           <main className="container-main container ">
