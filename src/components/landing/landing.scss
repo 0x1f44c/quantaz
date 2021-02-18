@@ -1,7 +1,7 @@
 .landing-container {
   padding-top: 60px;
-  outline: 1px solid black;
-  min-height: 2000px;
+  // outline: 1px solid black;
+  // min-height: 2000px;
 }
 .bg-for-landing {
   background: rgba(194, 221, 228, 1);
@@ -22,9 +22,9 @@
 .landing-logo-div {
   margin: 0 auto;
 }
-.main-landing-container {
-  position: relative;
-}
+// .main-landing-container {
+//   position: relative;
+// }
 .menu-btn-landing {
   width: 50px;
   height: 50px;
@@ -45,9 +45,7 @@
   align-items: center;
   justify-content: center;
 
-  position: absolute;
-  right: 0;
-
+  margin-left: auto;
   font-weight: 100;
   font-size: 33px;
   line-height: 1.484;
@@ -92,4 +90,44 @@
   transform-origin: top left;
   transform: rotate(-19deg);
   margin-left: 40px;
+}
+.benefit-item {
+  position: relative;
+  width: 362px;
+  height: 144px;
+  background: rgba(61, 174, 222, 0.29);
+  border-radius: 5px;
+
+  font-family: Nothing You Could Do;
+  font-style: normal;
+  font-weight: 400;
+  // font-size: 42px;
+  font-size: 28px;
+  line-height: 1.333;
+  color: #000000;
+  box-sizing: border-box;
+  padding-left: 20px;
+}
+.benefits-list {
+  margin-top: 100px;
+  padding: 0 203px 100px 203px;
+}
+.benefit-item:not(:last-child) {
+  margin-bottom: 100px;
+}
+.benefit-item:nth-child(odd) {
+  margin-left: auto;
+}
+.benefit-item > svg {
+  position: absolute;
+}
+.benefit-item:nth-child(odd) > svg {
+  right: 100%;
+  margin-right: 40px;
+  margin-top: 32px;
+}
+.benefit-item:nth-child(even) > svg {
+  left: 100%;
+  margin-left: 40px;
+  margin-top: 32px;
 }

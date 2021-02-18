@@ -8,9 +8,9 @@ class Landing extends Component {
         <div className="container landing-container">
           <header class="header-container">
             <div class="landing-logo-div">
-              <p>
+              <h1>
                 <a className="link  header-logo-ladning" href="/" aria-label="logo of privacy guard">PG</a>
-              </p>
+              </h1>
               <p class="landing-logo-messaging">Messaging</p>
             </div>
             <button className=" menu-btn-landing" type="button" aria-label="menu button">
@@ -22,6 +22,26 @@ class Landing extends Component {
           </header>
           <main class="main-landing-container">
             <a class="cool-button" href="/msg">message</a>
+            <section class="benefits-section">
+              <ul class="list benefits-list">
+                <li class="benefit-item">
+                  <svg width="80px" height="80px">
+                    <use href="./sprite.svg#icon-lock"></use>
+                  </svg>
+                  <h2>secure</h2>
+                  <p></p>
+                </li>
+                <li class="benefit-item">
+                  <svg width="80px" height="80px">
+                    <use href="./sprite.svg#icon-shield"></use>
+                  </svg>
+                  <h2>anonumoys</h2>
+                  <p></p>
+                </li>
+              </ul>
+
+
+            </section>
           </main>
         </div>
       </div>
