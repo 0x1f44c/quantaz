@@ -29,6 +29,7 @@
   width: 50px;
   height: 50px;
   border-style: none;
+  display: flex;
   background: transparent;
 }
 
@@ -56,6 +57,9 @@
   background: #66a4ac;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 5px;
+}
+.cool-button:active {
+  background: rgba(194, 221, 228, 1);
 }
 
 .header-logo-ladning {

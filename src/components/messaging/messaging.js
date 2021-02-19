@@ -15,7 +15,15 @@ class Messaging extends Component {
               <use className="icon-menu" href="./sprite.svg#icon-menu-btn"></use>
             </svg>
           </button>
-          <button class="day-night-btn"></button>
+          <div class="button-container">
+            {/* <div class="switch-container">
+              <button type="button" class="switch-circle"></button>
+            </div> */}
+            <div class="center">
+              <input type="checkbox" class="btn-input" >
+              </input>
+            </div>
+          </div>
         </header>
         <div className="main-wrapper">
           <main className="container-main container ">
