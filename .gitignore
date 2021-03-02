@@ -105,3 +105,6 @@ dist
 
 # React build directory
 build/
+
+# VS Code settings
+.vscode

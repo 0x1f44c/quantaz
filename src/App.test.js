@@ -9,6 +9,6 @@ test('renders "Login" link', () => {
       <App />
     </BrowserRouter>
   )
-  const linkElement = getByText(/Privacy Guard Messaging/i)
+  const linkElement = getByText(/Messaging/i)
   expect(linkElement).toBeInTheDocument()
 })
