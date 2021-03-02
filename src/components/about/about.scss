@@ -1,0 +1,58 @@
+.info-container {
+  margin-top: 50px;
+}
+
+body {
+  background: rgba(194, 221, 228, 1);
+}
+.header-logo-info-pages {
+  font-weight: 200;
+  font-size: 48px;
+  line-height: 1.254;
+  color: rgba(0, 0, 0, 0.5);
+  text-transform: uppercase;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+
+  width: 86px;
+  height: 86px;
+  border-radius: 50%;
+  background-color: #f9f9f9;
+}
+
+.header-info-pages {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.main-info-pages {
+  margin-top: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+  padding-bottom: 60px;
+}
+.info-title {
+  text-align: center;
+
+  font-family: Nothing You Could Do;
+  font-weight: 400;
+  font-size: 42px;
+  line-height: 1.334;
+  color: #000000;
+}
+.info-text {
+  margin-top: 80px;
+  font-weight: 200;
+  font-size: 26px;
+  line-height: 1.461;
+  color: #000000;
+}
+.body {
+  position: relative;
+}
+.footer-down {
+  position: absolute;
+  bottom: 20px;
+}

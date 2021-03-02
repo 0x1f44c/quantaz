@@ -69,13 +69,13 @@ class Messaging extends Component {
             <nav className="footer-navigation">
               <ul className="list navigation-list">
                 <li className="navigation-list-item">
-                  <a href="/" aria-label="about us">About</a>
+                  <a href="/" aria-label="about us">About us</a>
                 </li>
                 <li className="navigation-list-item">
-                  <a href="/" aria-label="licence">Licence</a>
+                  <a href="/license" aria-label="license">License</a>
                 </li>
                 <li className="navigation-list-item">
-                  <a href="/" aria-label="conect us">Conect us</a>
+                  <a href="/" aria-label="conect us">Contact us</a>
                 </li>
               </ul>
             </nav>
@@ -83,6 +83,7 @@ class Messaging extends Component {
           </div>
         </footer>
       </div>
+
     )
   }
 }
