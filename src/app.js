@@ -15,7 +15,7 @@ class App extends Component {
       <Router history={history}>
         <div className="app_container">
           <Switch>
-            <Route exact path="/landing">
+            <Route exact path="/">
               <Landing />
             </Route>
             <Route exact path="/msg">

@@ -7,8 +7,7 @@ class Messaging extends Component {
       <div className="container-for-padding">
         <header className="container header">
           <h1>
-            {/* На какую страницу будет правильно сослаться ниже?на лендинг */}
-            <a className="link header-logo" href="./landing" aria-label="logo of privacy guard">PG</a>
+            <a className="link header-logo" href="/" aria-label="logo of privacy guard">PG</a>
           </h1>
           <input className="header-input" />
           <button className=" menu-btn" type="button" aria-label="menu button">
@@ -16,12 +15,9 @@ class Messaging extends Component {
               <use className="icon-menu" href="./sprite.svg#icon-menu-btn"></use>
             </svg>
           </button>
-          <div class="button-container">
-            {/* <div class="switch-container">
-              <button type="button" class="switch-circle"></button>
-            </div> */}
-            <div class="center">
-              <input type="checkbox" class="btn-input" >
+          <div className="button-container">
+            <div className="center">
+              <input type="checkbox" className="btn-input" >
               </input>
             </div>
           </div>

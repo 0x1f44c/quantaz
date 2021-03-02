@@ -5,9 +5,9 @@ class About extends Component {
     render() {
         return (
 
-            <div class="bg-for-landing bg-info">
+            <div className="bg-for-landing bg-info">
                 <div className="container info-container">
-                    <header class="header-container header-info-pages">
+                    <header className="header-container header-info-pages">
                         <a className="link header-logo-info-pages" href="/landing" aria-label="logo of privacy guard">PG</a>
                         <button className=" menu-btn-landing" type="button" aria-label="menu button">
                             <svg className=" menu-svg" width="50px" height="50px">
@@ -16,9 +16,9 @@ class About extends Component {
                         </button>
                     </header>
 
-                    <main class="main-landing-container main-info-pages">
-                        <h1 class="info-title">About us</h1>
-                        <p class="info-text">Lorem ipsum dolor sit amet,
+                    <main className="main-landing-container main-info-pages">
+                        <h1 className="info-title">About us</h1>
+                        <p className="info-text">Lorem ipsum dolor sit amet,
                         consectetur adipiscing elit, sed do eiusmod te
                         mpor incididunt ut labore et dolore magna aliqua. Ut en
                         im ad minim veniam, quis nostrud exercitation ullamco laboris ni
