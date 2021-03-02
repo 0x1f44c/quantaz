@@ -61,7 +61,7 @@ class Messaging extends Component {
           </main>
         </div>
         <footer className="container footer-lines">
-          <a className="footer-logo" href="/landing" aria-label="logo of privacy guard">PG</a>
+          <a className="footer-logo" href="/" aria-label="logo of privacy guard">PG</a>
           <div className="footer-flex">
             <nav className="footer-navigation">
               <ul className="list navigation-list">

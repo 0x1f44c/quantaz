@@ -8,7 +8,7 @@ class About extends Component {
             <div className="bg-for-landing bg-info">
                 <div className="container info-container">
                     <header className="header-container header-info-pages">
-                        <a className="link header-logo-info-pages" href="/landing" aria-label="logo of privacy guard">PG</a>
+                        <a className="link header-logo-info-pages" href="/" aria-label="logo of privacy guard">PG</a>
                         <button className=" menu-btn-landing" type="button" aria-label="menu button">
                             <svg className=" menu-svg" width="50px" height="50px">
                                 <use className="icon-menu" href="./sprite.svg#icon-menu-btn"></use>
@@ -28,7 +28,7 @@ class About extends Component {
                         </p>
                     </main>
                     <footer className="container footer-lines footer-down">
-                        <a className="footer-logo" href="/landing" aria-label="logo of privacy guard">PG</a>
+                        <a className="footer-logo" href="/" aria-label="logo of privacy guard">PG</a>
                         <div className="footer-flex">
                             <nav className="footer-navigation">
                                 <ul className="list navigation-list">
