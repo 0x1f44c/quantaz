@@ -7,7 +7,8 @@ class Messaging extends Component {
       <div className="container-for-padding">
         <header className="container header">
           <h1>
-            <a className="link header-logo" href="/" aria-label="logo of privacy guard">PG</a>
+            {/* На какую страницу будет правильно сослаться ниже?на лендинг */}
+            <a className="link header-logo" href="./landing" aria-label="logo of privacy guard">PG</a>
           </h1>
           <input className="header-input" />
           <button className=" menu-btn" type="button" aria-label="menu button">
@@ -64,18 +65,18 @@ class Messaging extends Component {
           </main>
         </div>
         <footer className="container footer-lines">
-          <a className="footer-logo" href="/" aria-label="logo of privacy guard">PG</a>
+          <a className="footer-logo" href="/landing" aria-label="logo of privacy guard">PG</a>
           <div className="footer-flex">
             <nav className="footer-navigation">
               <ul className="list navigation-list">
                 <li className="navigation-list-item">
-                  <a href="/" aria-label="about us">About us</a>
+                  <a href="/about" aria-label="about us">About us</a>
                 </li>
                 <li className="navigation-list-item">
                   <a href="/license" aria-label="license">License</a>
                 </li>
                 <li className="navigation-list-item">
-                  <a href="/" aria-label="conect us">Contact us</a>
+                  <a href="/contact" aria-label="conect us">Contact us</a>
                 </li>
               </ul>
             </nav>
