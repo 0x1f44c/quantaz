@@ -6,6 +6,7 @@ import { Messaging } from './components/messaging/messaging'
 import { About } from './components/about/about'
 import { License } from './components/license/license'
 import { Contact } from './components/contact_us/contact'
+import { Keys } from './components/keys/keys'
 
 import './app.scss'
 
@@ -30,7 +31,9 @@ class App extends Component {
             <Route exact path="/contact">
               <Contact />
             </Route>
-
+            <Route exact path="/keys">
+              <Keys />
+            </Route>
           </Switch>
         </div>
       </Router>

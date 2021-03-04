@@ -21,7 +21,7 @@ class Landing extends Component {
           </header>
 
           <main className="main-landing-container">
-            <a className="cool-button" href="/msg">message</a>
+            <a className="cool-button" href="/keys">message</a>
             <section className="benefits-section">
               <ul className="list benefits-list">
                 <li className="benefit-item">

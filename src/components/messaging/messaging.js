@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 import './messaging.scss'
+import { Message } from './message/message'
+
 
 class Messaging extends Component {
   render() {
@@ -43,13 +45,11 @@ class Messaging extends Component {
               <section className="messages-section">
                 <h2 className="messages">messages</h2>
                 <ul className="list messages-wrapper">
-                  <li className="message-item">
-                    <p className="key-in-message key-in-message-1">0x7852e1f</p>
-                    <p className="text-message"></p>
-                  </li>
+                  <Message />
+
                   <li className="message-item">
                     <p className="key-in-message key-in-message-2">0x7852e1f</p>
-                    <p className="text-message"></p>
+                    <p className="text-message">my friend</p>
                   </li>
                 </ul>
                 <div className="message-input-div">
