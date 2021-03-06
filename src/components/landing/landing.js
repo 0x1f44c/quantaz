@@ -13,7 +13,7 @@ class Landing extends Component {
               </h1>
               <p className="landing-logo-messaging">Messaging</p>
             </div>
-            <button className=" menu-btn-landing" type="button" aria-label="menu button">
+            <button className=" menu-btn-only-landing " type="button" aria-label="menu button">
               <svg className=" menu-svg" width="50px" height="50px">
                 <use className="icon-menu" href="./sprite.svg#icon-menu-btn"></use>
               </svg>
@@ -25,14 +25,14 @@ class Landing extends Component {
             <section className="benefits-section">
               <ul className="list benefits-list">
                 <li className="benefit-item">
-                  <svg width="80px" height="80px">
+                  <svg width="60px" height="60px">
                     <use href="./sprite.svg#icon-lock"></use>
                   </svg>
                   <h2>secure</h2>
                   <p></p>
                 </li>
                 <li className="benefit-item">
-                  <svg width="80px" height="80px">
+                  <svg width="60px" height="60px">
                     <use href="./sprite.svg#icon-shield"></use>
                   </svg>
                   <h2>anonymous</h2>
@@ -41,8 +41,29 @@ class Landing extends Component {
               </ul>
             </section>
           </main>
+          <footer className="container footer-lines footer-down">
+            <a className="footer-logo" href="/" aria-label="logo of privacy guard">PG</a>
+            <div className="footer-flex">
+              <nav className="footer-navigation">
+                <ul className="list navigation-list">
+                  <li className="navigation-list-item">
+                    <a href="/about" aria-label="about us">About us</a>
+                  </li>
+                  <li className="navigation-list-item">
+                    <a href="/license" aria-label="license">License</a>
+                  </li>
+                  <li className="navigation-list-item">
+                    <a href="/contact" aria-label="contact us">Contact us</a>
+                  </li>
+                </ul>
+              </nav>
+              <p className="copyright">Copyright 2021 Privacy Guard Messages</p>
+            </div>
+          </footer>
         </div>
+
       </div>
+
 
     )
   }

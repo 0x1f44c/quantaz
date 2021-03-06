@@ -22,7 +22,7 @@ class Keys extends Component {
                             </label>
                             <ul className="list ">
                                 <li className="keys-list-item">
-                                    <p className="info-text-entry">In order to start messaging
+                                    <p className="info-text-keys">In order to start messaging
                                     please provide your public
                                     and private case.
                                     You should generate them
