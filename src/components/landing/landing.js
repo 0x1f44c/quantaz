@@ -13,11 +13,37 @@ class Landing extends Component {
               </h1>
               <p className="landing-logo-messaging">Messaging</p>
             </div>
-            <button className=" menu-btn-only-landing " type="button" aria-label="menu button">
+            <button className=" menu-btn-only-landing menu-btn-landing" type="button" aria-label="menu button">
               <svg className=" menu-svg" width="50px" height="50px">
                 <use className="icon-menu" href="./sprite.svg#icon-menu-btn"></use>
               </svg>
             </button>
+            <div className="menu-open">
+
+              <button className=" menu-close" type="button" aria-label="close menu">
+                <svg className=" close-menu-svg" width="40px" height="40px">
+                  <use className="icon-menu-close" href="./sprite.svg#icon-menu-close"></use>
+                </svg>
+              </button>
+
+              <ul className="list menu-list">
+                <li className="menu-item">
+                  <a href="/keys" aria-label="autorization">autorization</a>
+                </li>
+                <li className="menu-item">
+                  <a href="/msg" aria-label="messaging">messaging</a>
+                </li>
+                <li className="menu-item">
+                  <a href="/about" aria-label="about us">about us</a>
+                </li>
+                <li className="menu-item">
+                  <a href="/license" aria-label="license">license</a></li>
+                <li className="menu-item">
+                  <a href="/contact" aria-label="contact us">contact us</a>
+                </li>
+              </ul>
+
+            </div>
           </header>
 
           <main className="main-landing-container">

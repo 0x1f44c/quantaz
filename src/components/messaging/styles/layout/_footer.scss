@@ -1,3 +1,14 @@
+// .body {
+//   position: relative;
+// }
+.footer-down {
+  position: absolute;
+  bottom: 20px;
+}
+
+.footer-container {
+  margin: 0 auto;
+}
 .copyright {
   font-weight: 100;
   font-size: 12px;
@@ -13,6 +24,7 @@
 }
 .footer-lines {
   position: relative;
+  margin: 0 auto;
 }
 .footer-logo::before {
   content: "";

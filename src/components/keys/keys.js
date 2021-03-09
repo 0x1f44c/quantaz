@@ -41,7 +41,7 @@ class Keys extends Component {
                                     <input className="keys-input" type="text"></input>
                                 </li>
                                 <li className="keys-list-item generate-new-li">
-                                    <a href="" className="generate-new link">or generate new</a>
+                                    <a href="/" className="generate-new link">or generate new</a>
                                 </li>
 
                             </ul>

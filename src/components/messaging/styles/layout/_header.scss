@@ -171,8 +171,8 @@
   width: 466px;
   height: 40px;
   outline: transparent;
-  background: #ffffff;
-  border: 1px solid #000000;
+  background: #f9f9f9;
+  border: 1px solid rgba(0, 0, 0, 0.5);
   box-sizing: border-box;
   border-radius: 5px;
 
@@ -188,8 +188,8 @@
 }
 
 .menu-btn > svg {
-  fill: #c4c4c4;
+  fill: rgba(0, 58, 68, 1);
 }
 .menu-btn:active > svg {
-  fill: #424d54;
+  fill: rgba(196, 196, 196, 1);
 }
