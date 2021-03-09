@@ -1,0 +1,40 @@
+.menu-close {
+  background: none;
+  border: none;
+  position: absolute;
+  right: 0;
+}
+.menu-close > svg {
+  fill: #06565b;
+}
+.menu-close:active > svg {
+  fill: white;
+}
+.menu-open {
+  width: 250px;
+  height: 450px;
+  background: #c2dde4;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  box-sizing: border-box;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4);
+  background-color: rgba(194, 221, 228, 1);
+  z-index: 1;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+}
+.menu-list {
+  font-weight: 300;
+  font-size: 32px;
+  line-height: 1.375;
+  color: black;
+
+  padding-top: 40px;
+  padding-left: 30px;
+}
+.menu-item:not(:last-child) {
+  margin-bottom: 40px;
+}
+.menu-item:active > a {
+  color: #66a4ac;
+}

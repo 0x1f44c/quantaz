@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import './messaging.scss'
 import { Message } from './message/message'
+import { Menu } from '../menu/menu'
 
 
 class Messaging extends Component {
@@ -25,6 +26,7 @@ class Messaging extends Component {
                 </input>
               </div>
             </div>
+            <Menu></Menu>
           </header>
           <div className="main-wrapper">
             <main className="container-main container ">

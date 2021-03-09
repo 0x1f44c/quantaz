@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 import './landing.scss'
+import { Menu } from '../menu/menu'
+import { Footer } from '../footer/footer'
 
 class Landing extends Component {
   render() {
@@ -18,32 +20,7 @@ class Landing extends Component {
                 <use className="icon-menu" href="./sprite.svg#icon-menu-btn"></use>
               </svg>
             </button>
-            <div className="menu-open">
-
-              <button className=" menu-close" type="button" aria-label="close menu">
-                <svg className=" close-menu-svg" width="40px" height="40px">
-                  <use className="icon-menu-close" href="./sprite.svg#icon-menu-close"></use>
-                </svg>
-              </button>
-
-              <ul className="list menu-list">
-                <li className="menu-item">
-                  <a href="/keys" aria-label="autorization">autorization</a>
-                </li>
-                <li className="menu-item">
-                  <a href="/msg" aria-label="messaging">messaging</a>
-                </li>
-                <li className="menu-item">
-                  <a href="/about" aria-label="about us">about us</a>
-                </li>
-                <li className="menu-item">
-                  <a href="/license" aria-label="license">license</a></li>
-                <li className="menu-item">
-                  <a href="/contact" aria-label="contact us">contact us</a>
-                </li>
-              </ul>
-
-            </div>
+            < Menu ></Menu>
           </header>
 
           <main className="main-landing-container">
@@ -67,25 +44,7 @@ class Landing extends Component {
               </ul>
             </section>
           </main>
-          <footer className="container footer-lines footer-down">
-            <a className="footer-logo" href="/" aria-label="logo of privacy guard">PG</a>
-            <div className="footer-flex">
-              <nav className="footer-navigation">
-                <ul className="list navigation-list">
-                  <li className="navigation-list-item">
-                    <a href="/about" aria-label="about us">About us</a>
-                  </li>
-                  <li className="navigation-list-item">
-                    <a href="/license" aria-label="license">License</a>
-                  </li>
-                  <li className="navigation-list-item">
-                    <a href="/contact" aria-label="contact us">Contact us</a>
-                  </li>
-                </ul>
-              </nav>
-              <p className="copyright">Copyright 2021 Privacy Guard Messages</p>
-            </div>
-          </footer>
+          <Footer></Footer>
         </div>
 
       </div>
