@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import './messaging.scss'
 import { Message } from './message/message'
-import { Menu } from '../menu/menu'
+import { Header } from '../header/header'
 import { Footer } from '../footer/footer'
 
 
@@ -12,28 +12,10 @@ class Messaging extends Component {
       <div className="container">
 
         <div className="container-for-padding">
-
-          <header className="header-container header-info-pages">
-            <h1>
-              <a className="link header-logo-info-pages" href="/" aria-label="logo of privacy guard">PG</a>
-            </h1>
-            <button className=" menu-btn" type="button" aria-label="menu button">
-              <svg className=" menu-svg" width="50px" height="50px">
-                <use className="icon-menu" href="./sprite.svg#icon-menu-btn"></use>
-              </svg>
-            </button>
-
-            <div className="day-night-container">
-              <input type="checkbox" className="day-night" >
-              </input>
-            </div>
-
-            <input className="header-input" />
-
-            <Menu></Menu>
-          </header>
-
-
+          <Header></Header>
+          <div className="search-wrapper">
+            <input className="search" />
+          </div>
           <div className="main-wrapper">
             <main className="container-main container ">
               <div className="main-content-padding">

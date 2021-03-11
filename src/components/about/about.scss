@@ -1,28 +1,7 @@
-// .info-container {
-//   margin-top: 20px;
-// }
-
 body {
   background: rgba(194, 221, 228, 1);
 }
-.menu-btn-landing {
-  width: 50px;
-  height: 50px;
-  border-style: none;
-  background: transparent;
-}
 
-.header-info-pages {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.main-info-pages {
-  margin-top: 20px;
-  max-width: 900px;
-  margin: 0 auto;
-  padding-bottom: 60px;
-}
 .info-title {
   text-align: center;
 
@@ -38,11 +17,4 @@ body {
   font-size: 26px;
   line-height: 1.461;
   color: #000000;
-}
-// .body {
-//   position: relative;
-// }
-.footer-down {
-  position: absolute;
-  bottom: 20px;
 }
