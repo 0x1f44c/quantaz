@@ -1,14 +1,9 @@
-.header {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  position: relative;
-}
-.button-container {
+.day-night-container {
   position: absolute;
-  left: 452px;
+
+  left: 414px;
 }
-.btn-input {
+.day-night {
   position: relative;
   width: 80px;
   height: 40px;
@@ -19,10 +14,10 @@
   transition: 500ms;
   box-shadow: inset 0 0 5px rgba(0, 0, 0, 20%);
 }
-.btn-input:checked {
+.day-night:checked {
   background: rgba(194, 221, 228, 1);
 }
-.btn-input:before {
+.day-night:before {
   content: "";
   width: 40px;
   height: 40px;
@@ -35,119 +30,9 @@
   background: #fff;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 20%);
 }
-.btn-input:checked:before {
+.day-night:checked:before {
   left: 40px;
 }
-// .switch-container {
-//   display: block;
-//   display: flex;
-//   // align-content: flex-start;
-//   align-items: center;
-//   width: 80px;
-//   height: 40px;
-//   background: rgba(39, 68, 84, 0.51);
-//   border-radius: 20px;
-//   border-style: 1px solid black;
-// }
-// .switch-circle {
-//   width: 32px;
-//   height: 32px;
-//   border-radius: 50%;
-//   background: #fffbfb;
-//   border-style: none;
-//   margin-left: 5px;
-// }
-// .switch-circle:active {
-//   animation-name: move;
-//   animation-duration: 100ms;
-//   animation-timing-function: linear;
-//   animation-direction: alternate;
-//   animation-fill-mode: forwards;
-// }
-
-// @keyframes move {
-//   0% {
-//     transform: translatex(0);
-//   }
-
-//   100% {
-//     transform: translatex(40px);
-//   }
-// }
-
-// ------------
-// .day-night-btn {
-//   display: block;
-//   position: absolute;
-//   width: 80px;
-//   height: 40px;
-//   background: rgba(39, 68, 84, 0.51);
-//   border-radius: 20px;
-//   border-style: 1px solid black;
-//   left: 452px;
-// }
-// .day-night-btn:active {
-//   background: rgba(115, 157, 157, 0.45);
-//   border-style: 1px solid black;
-// }
-// .toggle-body {
-//   width: 80px;
-//   height: 40px;
-//   position: absolute;
-//   left: 452px;
-//   background: rgba(115, 157, 157, 0.45);
-//   border-radius: 2rem;
-//   // animation: angle-reverse $animtime $easing;
-// }
-// .toggle-body--on {
-//   // animation: angle $animtime $easing;
-//   animation-direction: alternate;
-// }
-// .toggle-btn {
-//   width: 2rem;
-//   height: 2rem;
-//   position: absolute;
-//   top: calc(50% - 2rem / 2);
-//   left: calc(27% - 2rem / 2);
-//   border-radius: 50%;
-//   background: rgba(39, 68, 84, 0.51);
-//   cursor: pointer;
-//   transform: translateX(0);
-//   // transition: $animtime $easing;
-// }
-// // .toggle-btn--on {
-// //   transition: $animtime $easing;
-// //   transform: translateX(150%);
-// //   background: $pink;
-// // }
-
-// @keyframes angle {
-//   0% {
-//     transform: rotate(0deg);
-//   }
-//   50% {
-//     transform: rotate(45deg);
-//   }
-//   100% {
-//     transform: rotate(0deg);
-//   }
-// }
-// @keyframes angle-reverse {
-//   0% {
-//     transform: rotate(0deg);
-//   }
-//   50% {
-//     transform: rotate(-45deg);
-//   }
-//   100% {
-//     transform: rotate(0deg);
-//   }
-// }
-// -------------------
-
-// .landing-logo-div {
-//   margin: 0 auto;
-// }
 
 .header-logo {
   font-weight: 400;
@@ -168,6 +53,7 @@
   background-color: #f9f9f9;
 }
 .header-input {
+  position: absolute;
   width: 466px;
   height: 40px;
   outline: transparent;
@@ -176,20 +62,6 @@
   box-sizing: border-box;
   border-radius: 5px;
 
-  margin-left: 510px;
+  right: 114px;
   padding: 0 20px;
-}
-.menu-btn {
-  width: 50px;
-  height: 50px;
-  margin-left: 64px;
-  border-style: none;
-  background: transparent;
-}
-
-.menu-btn > svg {
-  fill: rgba(0, 58, 68, 1);
-}
-.menu-btn:active > svg {
-  fill: rgba(196, 196, 196, 1);
 }

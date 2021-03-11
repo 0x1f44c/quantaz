@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import './license.scss'
-import { Menu } from '../menu/menu'
+import { Header } from '../header/header'
 import { Footer } from '../footer/footer'
 
 class License extends Component {
@@ -8,20 +8,11 @@ class License extends Component {
         return (
             <div className="bg-for-landing bg-info">
                 <div className="container info-container">
-                    <header className="header-container header-info-pages">
-                        <a className="link header-logo-info-pages" href="/" aria-label="logo of privacy guard">PG</a>
-                        <button className=" menu-btn-landing" type="button" aria-label="menu button">
-                            <svg className=" menu-svg" width="50px" height="50px">
-                                <use className="icon-menu" href="./sprite.svg#icon-menu-btn"></use>
-                            </svg>
-                        </button>
-                        <Menu></Menu>
-                    </header>
-
+                    <Header></Header>
                     <main className="main-landing-container main-info-pages">
-                        <h1 className="info-title">License</h1>
+                        <h2 className="info-title">License</h2>
                         <section className="info-text">
-                            <h2 className="license-title">MIT License</h2>
+                            <h3 className="license-title">MIT License</h3>
 
                             <p className="license-title">Copyright (c) 2021 0x1f44c</p>
 

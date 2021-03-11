@@ -12,24 +12,28 @@ class Messaging extends Component {
       <div className="container">
 
         <div className="container-for-padding">
-          <header className=" header">
+
+          <header className="header-container header-info-pages">
             <h1>
-              <a className="link header-logo" href="/" aria-label="logo of privacy guard">PG</a>
+              <a className="link header-logo-info-pages" href="/" aria-label="logo of privacy guard">PG</a>
             </h1>
-            <input className="header-input" />
-            <button className=" menu-btn " type="button" aria-label="menu button">
+            <button className=" menu-btn" type="button" aria-label="menu button">
               <svg className=" menu-svg" width="50px" height="50px">
                 <use className="icon-menu" href="./sprite.svg#icon-menu-btn"></use>
               </svg>
             </button>
-            <div className="button-container">
-              <div className="center">
-                <input type="checkbox" className="btn-input" >
-                </input>
-              </div>
+
+            <div className="day-night-container">
+              <input type="checkbox" className="day-night" >
+              </input>
             </div>
+
+            <input className="header-input" />
+
             <Menu></Menu>
           </header>
+
+
           <div className="main-wrapper">
             <main className="container-main container ">
               <div className="main-content-padding">
@@ -47,6 +51,9 @@ class Messaging extends Component {
                 <section className="messages-section">
                   <h2 className="messages">messages</h2>
                   <ul className="list messages-wrapper">
+                    <Message />
+                    <Message />
+                    <Message />
                     <Message />
 
                     <li className="message-item">

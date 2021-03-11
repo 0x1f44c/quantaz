@@ -8,19 +8,23 @@ class Landing extends Component {
     return (
       <div className="bg-for-landing">
         <div className="container landing-container">
-          <header className="header-container">
+
+
+          <header className="header-container header-info-pages">
+
             <div className="landing-logo-div">
               <h1>
-                <a className="link  header-logo-ladning" href="/" aria-label="logo of privacy guard">PG</a>
+                <a className="link header-logo-landing" href="/" aria-label="logo of privacy guard">PG</a>
               </h1>
               <p className="landing-logo-messaging">Messaging</p>
             </div>
-            <button className=" menu-btn-only-landing menu-btn-landing" type="button" aria-label="menu button">
+
+            <button className=" menu-btn-landing" type="button" aria-label="menu button">
               <svg className=" menu-svg" width="50px" height="50px">
                 <use className="icon-menu" href="./sprite.svg#icon-menu-btn"></use>
               </svg>
             </button>
-            < Menu ></Menu>
+            <Menu></Menu>
           </header>
 
           <main className="main-landing-container">

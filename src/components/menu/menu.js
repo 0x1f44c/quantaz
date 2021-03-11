@@ -8,7 +8,7 @@ class Menu extends Component {
 
             <div className="menu-open">
                 <button className=" menu-close" type="button" aria-label="close menu">
-                    <svg className=" close-menu-svg" width="40px" height="40px">
+                    <svg className=" close-menu-svg" width="50px" height="50px">
                         <use className="icon-menu-close" href="./sprite.svg#icon-menu-close"></use>
                     </svg>
                 </button>

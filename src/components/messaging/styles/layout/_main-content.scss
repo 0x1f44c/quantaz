@@ -1,3 +1,7 @@
+.wrapper-msg-all {
+  margin: 0 auto;
+}
+
 .container-main {
   background-color: rgba(194, 221, 228, 1);
   // height: 800px;
@@ -9,17 +13,12 @@
 .main-content-padding {
   padding-top: 20px;
   padding-right: 114px;
-  padding-bottom: 114px;
   padding-left: 84px;
+  padding-bottom: 20px;
 
   display: flex;
   flex-direction: row;
 }
-
-// .public-keys-section {
-//   // display: flex;
-//   // flex-direction: column;
-// }
 
 .public-keys {
   font-style: 300;
@@ -45,7 +44,7 @@
 }
 .public-keys-wrapper {
   max-width: 266px;
-  height: 546px;
+  height: 400px;
   background: transparent;
   border-radius: 5px;
   outline: transparent;
@@ -58,6 +57,8 @@
 
   color: #000000;
   box-sizing: border-box;
+
+  overflow: auto;
 }
 .public-keys-item {
   text-align: center;
@@ -102,10 +103,9 @@
   background: rgba(194, 221, 228, 1);
   border-radius: 5px;
   margin-top: 40px;
-
-  display: flex;
-  justify-content: space-between;
   box-sizing: border-box;
+
+  overflow: auto;
 }
 .message-item {
   width: 304px;
@@ -116,14 +116,26 @@
   border-radius: 20px;
   position: relative;
 }
-.message-item:first-child {
+.message-item:not(:first-child) {
+  margin-top: 48px;
+}
+.message-item:nth-child(odd) {
   background: #82f4c4;
 }
-.message-item:last-child {
-  margin-top: 194px;
+.message-item:nth-child(even) {
+  margin-left: 320px;
+  margin-right: 0px;
   background: #cee3ec;
-  margin-left: 0px;
 }
+// ----------------------------------scroll bar
+// ::-webkit-scrollbar {
+//   width: 1px;
+//   background: #000;
+// }
+// body {
+//   overflow: scroll;
+// }
+// ----------------------------------END scroll bar
 .text-message {
   font-weight: 300;
   font-size: 18px;
@@ -167,7 +179,6 @@
   width: 648px;
   height: 50px;
   box-sizing: border-box;
-
   background: transparent;
 
   // margin-top: 46px;
@@ -189,14 +200,11 @@
   position: absolute;
   right: 0px;
   bottom: 8px;
-  // border-style: none;
-
   font-weight: 200;
   font-size: 18px;
   line-height: 1.389;
   width: 60px;
   height: 24px;
-
   background: #c2dde4;
   border: 1px solid #000000;
   box-sizing: border-box;
