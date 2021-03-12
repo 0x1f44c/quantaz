@@ -28,6 +28,9 @@ class Messaging extends Component {
                     <li className="public-keys-item">
                       0x76521e72
                   </li>
+                    <li className="public-keys-item">
+                      <button>+</button>
+                    </li>
                   </ul>
                 </section>
                 <section className="messages-section">

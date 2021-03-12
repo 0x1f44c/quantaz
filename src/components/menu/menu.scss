@@ -7,9 +7,9 @@
 .menu-close > svg {
   fill: #06565b;
 }
-.menu-close:active > svg {
-  fill: white;
-}
+// .menu-close:active > svg {
+//   fill: white;
+// }
 .menu-open {
   width: 250px;
   height: 450px;
@@ -20,10 +20,10 @@
   background-color: rgba(194, 221, 228, 1);
   z-index: 1;
   position: absolute;
-  right: 20px;
+  right: 0px;
   top: 20px;
-
-  //  Снять !!!!!!
+}
+.menu-open-hide {
   display: none;
 }
 .menu-list {

@@ -4,9 +4,26 @@ import { Menu } from '../menu/menu'
 
 
 class Header extends Component {
-    sayHello() {
-        alert('Hello!');
+    constructor(props) {
+        super(props);
+        this.state = {
+            menuToggle: false,
+        };
     }
+    closeMe = () => {
+        this.setState({ menuToggle: false })
+    }
+    menuOpen = () => {
+        console.log('toggle');
+        if (this.state.menuToggle === true) {
+            this.setState({ menuToggle: false })
+        } else {
+            this.setState({ menuToggle: true })
+        }
+        console.log(this.state.menuToggle);
+    }
+
+
     render() {
         return (
             <header className="header-container ">
@@ -20,12 +37,12 @@ class Header extends Component {
                     <input type="checkbox" className="day-night" >
                     </input>
                 </div>
-                <button className=" menu-btn" type="button" aria-label="menu button">
+                <button onClick={this.menuOpen} className="menu-btn" type="button" aria-label="menu button">
                     <svg className=" menu-svg" width="50px" height="50px">
                         <use className="icon-menu" href="./sprite.svg#icon-menu-btn"></use>
                     </svg>
                 </button>
-                <Menu></Menu>
+                <Menu menuToggle={this.state.menuToggle} closeMe={this.closeMe}></Menu>
             </header>
             // <header className="header-container header-info-pages">
             //     <h1>

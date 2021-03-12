@@ -11,9 +11,11 @@ class Keys extends Component {
                     <Header></Header>
                     <main className="main-landing-container main-info-pages">
                         <div className="keys-items-container">
-                            <label>
+
+                            <a className="check-box" href="/msg">Ok</a>
+                            {/* <label>
                                 <input className="check-keys" type="checkbox"></input>
-                            </label>
+                            </label> */}
                             <ul className="list ">
                                 <li className="keys-list-item">
                                     <p className="info-text-keys">In order to start messaging
