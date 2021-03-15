@@ -1,0 +1,28 @@
+.add-key-modal-wrapper{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position:absolute;
+}
+.add-key-modal-wrapper-hide{
+    display: none;
+}
+.add-key-modal{
+    position:relative;
+ width: 400px;
+   height: 200px;
+   background:rgba(0, 58, 68, 1);
+   color:black;
+   border-radius: 10px;
+    padding: 10px;
+    color:white;
+    font-size: 24px;
+}
+.add-key-close-btn{
+    width: 30px;
+    height: 40px;
+    background: white;
+    position: absolute;
+    right:0;
+    top:0;
+}

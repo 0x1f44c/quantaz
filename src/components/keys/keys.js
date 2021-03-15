@@ -6,7 +6,7 @@ import { Footer } from '../footer/footer'
 class Keys extends Component {
     render() {
         return (
-            <div className="bg-for-landing bg-info">
+            <div className="bg-for-landing bg-info ">
                 <div className="container info-container">
                     <Header></Header>
                     <main className="main-landing-container main-info-pages">

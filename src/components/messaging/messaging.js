@@ -3,10 +3,30 @@ import './messaging.scss'
 import { Message } from './message/message'
 import { Header } from '../header/header'
 import { Footer } from '../footer/footer'
+import { AddKey } from '../addKey/addKey'
 
 
 
 class Messaging extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      addKeyToggle: false,
+    };
+  }
+  closeMe = () => {
+    this.setState({ addKeyToggle: false })
+  }
+  addKeyOpen = () => {
+    console.log('key-open');
+    if (this.state.addKeyToggle === true) {
+      this.setState({ addKeyToggle: false })
+    } else {
+      this.setState({ addKeyToggle: true })
+    }
+    console.log(this.state.addKeyToggle);
+  }
+
   render() {
     return (
       <div className="container">
@@ -29,7 +49,7 @@ class Messaging extends Component {
                       0x76521e72
                   </li>
                     <li className="public-keys-item">
-                      <button>+</button>
+                      <button onClick={this.addKeyOpen} className="publick-key-add-btn" type="button">add</button>
                     </li>
                   </ul>
                 </section>
@@ -55,9 +75,11 @@ class Messaging extends Component {
             </main>
           </div>
         </div>
+        <AddKey addKeyToggle={this.state.addKeyToggle} closeMe={this.closeMe}></AddKey>
         <Footer></Footer>
 
       </div>
+
 
     )
   }

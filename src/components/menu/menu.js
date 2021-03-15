@@ -5,9 +5,7 @@ import './menu.scss'
 class Menu extends Component {
     constructor(props) {
         super(props);
-        // this.addActiveClass = this.addActiveClass.bind(this);
         this.state = {
-            // active: true,
             active: this.props.menuToggle,
         };
     }
