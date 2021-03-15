@@ -17,14 +17,22 @@
   //   margin-left: 234px;
 }
 
-.check-keys {
+.check-key-btn {
+  width: 104px;
+  height: 104px;
   position: absolute;
-  display: inline-block;
-  width: 77.34px;
-  height: 76.23px;
   border-radius: 50%;
-  top: 248px;
-  left: 550px;
+  background:transparent;
+  border:transparent;
+  top: 240px;
+  left: 700px;
+  
+}
+.check-key-btn > svg{
+  fill:black;
+}
+.check-key-btn-active{
+  background: rgba(0, 255, 148, 1);
 }
 .keys-items-container:not(:last-child) {
   margin-bottom: 50px;

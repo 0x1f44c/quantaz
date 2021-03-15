@@ -12,7 +12,13 @@ class Keys extends Component {
                     <main className="main-landing-container main-info-pages">
                         <div className="keys-items-container">
 
-                            <a className="check-box" href="/msg">Ok</a>
+                            <a className="check-key-link" href="/msg">
+                                <button className="check-key-btn " type="button" >
+                                    <svg className="chek-key-svg" width="104px" height="104px">
+                                        <use className="icon-pen-btn" href="./sprite.svg#icon-pen-button"></use>
+                                    </svg>
+                                </button>
+                            </a>
                             {/* <label>
                                 <input className="check-keys" type="checkbox"></input>
                             </label> */}
