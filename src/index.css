@@ -47,3 +47,12 @@ a:focus {
 button:focus {
   outline: none;
 }
+
+.container {
+  width: 1170px;
+  margin: 0 auto;
+}
+
+body {
+  background-color: rgba(194, 221, 228, 1);
+}

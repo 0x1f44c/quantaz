@@ -30,6 +30,10 @@ class Messaging extends Component {
                     <Message />
                     <Message />
 
+                    <li className="message-item">
+                      <p className="key-in-message key-in-message-2">0x7852e1f</p>
+                      <p className="text-message">my friend</p>
+                    </li>
                   </ul>
                   <div className="message-input-div">
                     <input className="message-input" type="text" />
