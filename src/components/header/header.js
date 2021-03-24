@@ -27,9 +27,10 @@ class Header extends Component {
     render() {
         return (
             <header className="header-container ">
-                <div className="landing-logo-div">
+
+                <div className="logo-div">
                     <h1>
-                        <a className="link header-logo-landing" href="/" aria-label="logo of privacy guard">PG</a>
+                        <a className="link header-logo" href="/" aria-label="logo of privacy guard">PG</a>
                     </h1>
                     <p className="landing-logo-messaging">Messaging</p>
                 </div>

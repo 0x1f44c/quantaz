@@ -1,29 +1,99 @@
-.add-key-modal-wrapper{
-    z-index: 1;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    position:absolute;
+.add-key-modal-wrapper {
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
 }
-.add-key-modal-wrapper-hide{
-    display: none;
+.add-key-modal-wrapper-hide {
+  display: none;
 }
-.add-key-modal{
-    position:relative;
- width: 400px;
-   height: 200px;
-   background:rgba(0, 58, 68, 1);
-   color:black;
-   border-radius: 10px;
-    padding: 10px;
-    color:white;
-    font-size: 24px;
+.add-key-modal {
+  position: relative;
+  width: 420px;
+  height: 220px;
+
+  background: #c2dde4;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
 }
-.add-key-close-btn{
-    width: 30px;
-    height: 40px;
-    background: white;
-    position: absolute;
-    right:0;
-    top:0;
+.add-key-close-btn {
+  position: absolute;
+  background: transparent;
+  border: none;
+  right: 0;
+  top: 0;
+}
+.new-key-text {
+  font-family: Nothing You Could Do;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 1.343;
+  color: #000000;
+  text-align: center;
+}
+.add-key-decoration-line {
+  width: 100%;
+  height: 1px;
+  background: #000;
+}
+.wrapper-key-and-input {
+  display: flex;
+  align-items: center;
+  margin-top: 24px;
+  justify-content: center;
+}
+.key-text {
+  font-family: Nothing You Could Do;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 1.343;
+  color: #000000;
+}
+.add-key-input {
+  margin-left: 30px;
+
+  width: 250px;
+  height: 29.6px;
+
+  font-size: 18px;
+
+  background: #ffffff;
+
+  border: 1px solid transparent;
+  box-sizing: border-box;
+  border-radius: 5px;
+  outline: transparent;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.add-key-input:focus {
+  border: 1px solid black;
+}
+.wrapper-for-buttons {
+  margin: 40px 0 0 182px;
+}
+.add-key-btn-cancel {
+  margin-left: 30px;
+}
+.add-key-btn {
+  width: 60px;
+  height: 29.6px;
+  background: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+
+  border: none;
+  font-size: 20px;
+  line-height: 1.45;
+
+  color: #000000;
+}
+.add-key-btn-ok:active {
+  background: rgba(130, 244, 196, 1);
+}
+.add-key-btn-cancel:active {
+  background: rgba(229, 229, 229, 1);
 }

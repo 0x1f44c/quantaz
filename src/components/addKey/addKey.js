@@ -22,10 +22,23 @@ class AddKey extends Component {
         return (
             <div className={this.state.active ? 'add-key-modal-wrapper' : 'add-key-modal-wrapper-hide'}>
                 <div className="add-key-modal">
-                    <button onClick={this.addKeyClose} className="add-key-close-btn" type="button">X</button>
-                    <p>
-                        Window for new key
+                    <button onClick={this.addKeyClose} className="add-key-close-btn" type="button">
+                        <svg className=" close-menu-svg" width="30px" height="30px">
+                            <use className="icon-menu-close" href="./sprite.svg#icon-menu-close"></use>
+                        </svg>
+                    </button>
+                    <p className="new-key-text">
+                        New key
                 </p>
+                    <div className="add-key-decoration-line"></div>
+                    <div className="wrapper-key-and-input">
+                        <p className="key-text">Key:</p>
+                        <input className="add-key-input"></input>
+                    </div>
+                    <div className="wrapper-for-buttons">
+                        <button type="button" className="add-key-btn add-key-btn-ok">ok</button>
+                        <button type="button" className="add-key-btn add-key-btn-cancel">cancel</button>
+                    </div>
                 </div>
             </div>
         )

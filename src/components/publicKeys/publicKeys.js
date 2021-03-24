@@ -27,7 +27,7 @@ class PublicKeys extends Component {
     render() {
         return (
 
-            <section className="public-keys-section">
+            <section>
                 <h2 className="public-keys">public keys </h2>
                 <ul className="public-keys-wrapper list">
                     <li className="public-keys-item">
