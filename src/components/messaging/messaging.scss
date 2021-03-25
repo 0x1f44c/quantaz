@@ -78,26 +78,7 @@
 
   overflow: auto;
 }
-.message-item {
-  width: 304px;
-  height: 144px;
-  border: 0.5px solid #000000;
-  box-sizing: border-box;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 20px;
-  position: relative;
-}
-.message-item:not(:first-child) {
-  margin-top: 48px;
-}
-.message-item:nth-child(odd) {
-  background: #82f4c4;
-}
-.message-item:nth-child(even) {
-  margin-left: 320px;
-  margin-right: 0px;
-  background: #cee3ec;
-}
+
 // ----------------------------------scroll bar
 // ::-webkit-scrollbar {
 //   width: 1px;
