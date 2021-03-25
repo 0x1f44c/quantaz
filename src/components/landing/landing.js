@@ -40,4 +40,3 @@ class Landing extends Component {
 }
 
 export { Landing }
-

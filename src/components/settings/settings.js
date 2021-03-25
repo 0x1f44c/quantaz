@@ -7,9 +7,9 @@ class Settings extends Component {
     render() {
         return (
 
-            <div className="container">
+            <div className="container  container-for-all">
                 <Header></Header>
-                <main className="main-landing-container ">
+                <main className=" container-for-main ">
                     <h2 className="info-title">Settings</h2>
                     <section className="info-text info-text-settings">
                         <p className="settings-text">Network getaway</p>
