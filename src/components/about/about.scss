@@ -1,17 +1,7 @@
 @import "../styles/common.scss";
-// .info-title {
-//   text-align: center;
 
-//   font-family: Nothing You Could Do;
-//   font-weight: 400;
-//   font-size: 42px;
-//   line-height: 1.334;
-//   color: #000000;
-// }
-// .info-text {
-//   margin-top: 80px;
-//   font-weight: 200;
-//   font-size: 26px;
-//   line-height: 1.461;
-//   color: #000000;
-// }
+.about-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}

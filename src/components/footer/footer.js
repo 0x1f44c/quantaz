@@ -13,13 +13,7 @@ class Footer extends Component {
                                 <a href="/about" aria-label="about us">About us</a>
                             </li>
                             <li className="navigation-list-item">
-                                <div className="footer-decor"></div>
-                            </li>
-                            <li className="navigation-list-item">
                                 <a href="/license" aria-label="license">License</a>
-                            </li>
-                            <li className="navigation-list-item">
-                                <div className="footer-decor"></div>
                             </li>
                             <li className="navigation-list-item">
                                 <a href="/contact" aria-label="contact us">Contact us</a>
