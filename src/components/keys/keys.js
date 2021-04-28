@@ -1,14 +1,11 @@
 import React, { Component } from 'react'
 import './keys.scss'
-import { Header } from '../header/header'
-import { Footer } from '../footer/footer'
 
 class Keys extends Component {
     render() {
         return (
             <div className="bg-for-landing bg-info ">
                 <div className="container info-container">
-                    <Header></Header>
                     <main className="main-landing-container main-info-pages">
                         <div className="keys-items-container">
 
@@ -26,14 +23,14 @@ class Keys extends Component {
                                 <li className="keys-list-item">
                                     <p className="info-text-keys">In order to start messaging
                                     please provide your public
-                                    and private case.
+                                    and private keys.
                                     You should generate them
                                     using GPG (see instructions here)
                         </p>
                                 </li>
 
                                 <li className="keys-list-item">
-                                    <p className="info-text-keys">Publick key</p>
+                                    <p className="info-text-keys"> Public key</p>
                                     <input className="keys-input" type="text"></input>
                                 </li>
 
@@ -43,13 +40,12 @@ class Keys extends Component {
                                     <input className="keys-input" type="text"></input>
                                 </li>
                                 <li className="keys-list-item generate-new-li">
-                                    <a href="/" className="generate-new link">or generate new</a>
+                                    <a href="/keys/generate" className="generate-new link">or generate new</a>
                                 </li>
 
                             </ul>
                         </div>
                     </main>
-                    <Footer></Footer>
                 </div>
             </div>
         )

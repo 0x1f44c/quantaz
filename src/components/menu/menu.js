@@ -12,18 +12,19 @@ class Menu extends Component {
     menuClose = () => {
         this.props.closeMe()
     }
-    shouldComponentUpdate(nextProps, nextState) {
+    shouldComponentUpdate(nextProps) {
         if (this.state.active !== nextProps.menuToggle) {
             this.setState({ active: nextProps.menuToggle })
-        } return true;
+        };
+        return true;
     }
     render() {
         return (
 
             // <div className="menu-open-hide">
             <div className={this.state.active ? 'menu-open' : 'menu-open-hide'} >
-                <button onClick={this.menuClose} className=" menu-close" type="button" aria-label="close menu">
-                    <svg className=" close-menu-svg" width="50px" height="50px">
+                <button onClick={this.menuClose} className="menu-close" type="button" aria-label="close menu">
+                    <svg className="close-menu-svg" width="50px" height="50px">
                         <use className="icon-menu-close" href="./sprite.svg#icon-menu-close"></use>
                     </svg>
                 </button>

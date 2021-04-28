@@ -8,7 +8,6 @@ class License extends Component {
         return (
             <div className="bg-for-landing bg-info">
                 <div className="container info-container">
-                    <Header></Header>
                     <main className="main-landing-container main-info-pages">
                         <h2 className="info-title">License</h2>
                         <section className="info-text">
@@ -35,7 +34,6 @@ class License extends Component {
                             SOFTWARE. </p>
                         </section>
                     </main>
-                    <Footer></Footer>
                 </div>
             </div>
         )

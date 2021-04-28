@@ -9,7 +9,6 @@ class Contact extends Component {
         return (
             <div className="bg-for-landing bg-info">
                 <div className="container info-container">
-                    <Header></Header>
                     <main className="main-landing-container main-info-pages contact-page">
                         <h2 className="info-title">Contact us</h2>
                         <p className="info-text contact-text">Country: Ukraine</p>
@@ -19,7 +18,6 @@ class Contact extends Component {
                             <use href="./sprite.svg#icon-arrow"></use>
                         </svg>
                     </main>
-                    <Footer></Footer>
                 </div>
             </div >
         )

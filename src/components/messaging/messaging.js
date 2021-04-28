@@ -15,7 +15,6 @@ class Messaging extends Component {
       <div className="container">
 
         <div className="container-for-padding">
-          <Header></Header>
           <div className="search-wrapper">
             <input className="search" />
           </div>
@@ -45,7 +44,6 @@ class Messaging extends Component {
             </main>
           </div>
         </div>
-        <Footer></Footer>
 
       </div>
 

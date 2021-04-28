@@ -38,7 +38,7 @@ class Header extends Component {
                     </input>
                 </div>
                 <button onClick={this.menuOpen} className="menu-btn" type="button" aria-label="menu button">
-                    <svg className=" menu-svg" width="50px" height="50px">
+                    <svg className="menu-svg" width="50px" height="50px">
                         <use className="icon-menu" href="./sprite.svg#icon-menu-btn"></use>
                     </svg>
                 </button>

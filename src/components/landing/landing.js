@@ -8,7 +8,6 @@ class Landing extends Component {
     return (
       <div className="bg-for-landing">
         <div className="container landing-container">
-          <Header></Header>
 
           <main className="main-landing-container">
             <a className="cool-button" href="/keys">message</a>
@@ -31,7 +30,6 @@ class Landing extends Component {
               </ul>
             </section>
           </main>
-          <Footer></Footer>
         </div>
 
       </div>

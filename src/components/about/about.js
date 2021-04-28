@@ -10,7 +10,6 @@ class About extends Component {
 
             <div className="bg-for-landing bg-info">
                 <div className="container info-container">
-                    <Header></Header>
                     <main className="main-landing-container main-info-pages">
                         <h2 className="info-title">About us</h2>
                         <p className="info-text">Lorem ipsum dolor sit amet,
@@ -22,7 +21,6 @@ class About extends Component {
                         caecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                         </p>
                     </main>
-                    <Footer></Footer>
                 </div>
             </div>
 
