@@ -1,5 +1,3 @@
-@import "../styles/common.scss";
-
 .info-text-keys {
   max-width: 400px;
 
@@ -24,15 +22,16 @@
   height: 104px;
   position: absolute;
   border-radius: 50%;
-  background: transparent;
-  border: transparent;
+  background:transparent;
+  border:transparent;
   top: 240px;
   left: 700px;
+  
 }
-.check-key-btn > svg {
-  fill: black;
+.check-key-btn > svg{
+  fill:black;
 }
-.check-key-btn-active {
+.check-key-btn-active{
   background: rgba(0, 255, 148, 1);
 }
 .keys-items-container:not(:last-child) {

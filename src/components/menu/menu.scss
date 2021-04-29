@@ -1,5 +1,3 @@
-@import "../styles/common.scss";
-
 .menu-close {
   background: none;
   border: none;
@@ -14,7 +12,7 @@
 // }
 .menu-open {
   width: 250px;
-  min-height: 450px;
+  height: 450px;
   background: #c2dde4;
   border: 1px solid rgba(0, 0, 0, 0.4);
   box-sizing: border-box;
@@ -35,7 +33,6 @@
   color: black;
 
   padding-top: 40px;
-  padding-bottom: 30px;
   padding-left: 30px;
 }
 .menu-item:not(:last-child) {

@@ -36,9 +36,6 @@ class Menu extends Component {
                         <a href="/msg" aria-label="messaging">messaging</a>
                     </li>
                     <li className="menu-item">
-                        <a href="/settings" aria-label="settings">settings</a>
-                    </li>
-                    <li className="menu-item">
                         <a href="/about" aria-label="about us">about us</a>
                     </li>
                     <li className="menu-item">
