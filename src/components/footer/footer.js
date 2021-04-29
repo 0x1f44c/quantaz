@@ -5,9 +5,7 @@ import './footer.scss'
 class Footer extends Component {
     render() {
         return (
-
-            <footer className="container footer-lines footer-down">
-                <a className="footer-logo" href="/" aria-label="logo of privacy guard">PG</a>
+            <footer className="footer-lines footer-down">
                 <div className="footer-flex">
                     <nav className="footer-navigation">
                         <ul className="list navigation-list">
@@ -22,8 +20,8 @@ class Footer extends Component {
                             </li>
                         </ul>
                     </nav>
-                    <p className="copyright">Copyright 2021 Privacy Guard Messages</p>
                 </div>
+                <p className="copyright">Copyright 2021 Privacy Guard Messages</p>
             </footer>
 
         )

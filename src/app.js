@@ -7,6 +7,7 @@ import { About } from './components/about/about'
 import { License } from './components/license/license'
 import { Contact } from './components/contact_us/contact'
 import { Keys } from './components/keys/keys'
+import { KeysGenerator } from './components/keys/keys_generator'
 
 import './app.scss'
 
@@ -33,6 +34,9 @@ class App extends Component {
             </Route>
             <Route exact path="/keys">
               <Keys />
+            </Route>
+            <Route path="/keys/generate" >
+              <KeysGenerator />
             </Route>
           </Switch>
         </div>

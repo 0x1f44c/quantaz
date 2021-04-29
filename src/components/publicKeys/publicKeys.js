@@ -37,7 +37,7 @@ class PublicKeys extends Component {
                         0x76521e72
                   </li>
                     <li className="public-keys-item">
-                        <button onClick={this.addKeyOpen} className="publick-key-add-btn" type="button">add</button>
+                        <button onClick={this.addKeyOpen} className="public-key-add-btn" type="button">add</button>
                     </li>
                 </ul>
                 <AddKey addKeyToggle={this.state.addKeyToggle} closeMe={this.closeMe}></AddKey>
