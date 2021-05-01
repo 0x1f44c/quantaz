@@ -1,22 +1,29 @@
+// External imports
 import React from 'react'
 import ReactDOM from 'react-dom'
+import { Provider } from 'react-redux'
 import { Router } from 'react-router-dom'
+
+// internal imports
 import './index.css'
-import App from './app'
 import * as serviceWorker from './serviceWorker'
 import { history } from './utils/history'
+import store from './store'
+
+// Component imports
+import App from './app'
 import { Header } from './components/header/header'
 import { Footer } from './components/footer/footer'
 
-// ReactDOM.render(<App />, document.getElementById('root'))
-
 ReactDOM.render(
   <React.StrictMode>
-    <Router history={history}>
-      <Header />
-        <App />
-      <Footer />
-    </Router>
+    <Provider store={store}>
+      <Router history={history}>
+          <Header />
+            <App />
+          <Footer />
+      </Router>
+    </Provider>
   </React.StrictMode>,
   document.getElementById('root')
 )

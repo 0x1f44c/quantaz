@@ -1,15 +1,22 @@
 import React, { useState } from "react";
+import { useDispatch } from 'react-redux'
+import { useHistory } from "react-router-dom";
 import { generateKey } from 'openpgp/lightweight';
+
+import { keysUpdated } from './../../slices/keysSlice'
 
 import './keys.scss';
 
-function KeysGenerator() {
+const KeysGenerator = () => {
     const [name, setName] = useState('Test');
     const [email, setEmail] = useState('test@email.com');
     const [error, setError] = useState('');
     const [keys, setKeys] = useState({});
 
-    async function handleSubmit(e) {
+    const dispatch = useDispatch();
+    const history = useHistory();
+
+    const handleSubmit = async (e) => {
         e.preventDefault();
         if (!name || !email) {
             setError('Fill in both fields to generate key');
@@ -21,7 +28,14 @@ function KeysGenerator() {
             userIDs: [{ name, email }]
         });
 
+        dispatch(
+            keysUpdated({
+                private: privateKey,
+                public: publicKey
+            })
+        );
         setKeys({privateKey, publicKey});
+        // history.goBack();
     }
 
     return (

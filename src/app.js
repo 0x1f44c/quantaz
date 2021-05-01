@@ -1,6 +1,13 @@
+// External imports
 import React, { Component } from 'react'
 import { Router, Route, Switch, withRouter } from 'react-router-dom'
+
+// Internal imports
+
+import './app.scss'
 import { history } from './utils/history'
+
+// Component imports
 import { Landing } from './components/landing/landing'
 import { Messaging } from './components/messaging/messaging'
 import { About } from './components/about/about'
@@ -8,8 +15,6 @@ import { License } from './components/license/license'
 import { Contact } from './components/contact_us/contact'
 import { Keys } from './components/keys/keys'
 import { KeysGenerator } from './components/keys/keys_generator'
-
-import './app.scss'
 
 class App extends Component {
   render() {
