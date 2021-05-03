@@ -1,4 +1,6 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
+
 import './footer.scss'
 
 
@@ -10,13 +12,13 @@ class Footer extends Component {
                     <nav className="footer-navigation">
                         <ul className="list navigation-list">
                             <li className="navigation-list-item">
-                                <a href="/about" aria-label="about us">About us</a>
+                                <Link to="/about">About us</Link>
                             </li>
                             <li className="navigation-list-item">
-                                <a href="/license" aria-label="license">License</a>
+                                <Link to="/license">License</Link>
                             </li>
                             <li className="navigation-list-item">
-                                <a href="/contact" aria-label="contact us">Contact us</a>
+                                <Link to="/contact">Contact us</Link>
                             </li>
                         </ul>
                     </nav>

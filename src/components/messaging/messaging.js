@@ -1,9 +1,8 @@
 import React, { Component } from 'react'
+
 import './messaging.scss'
 import { PublicKeys } from '../publicKeys/publicKeys'
 import { Message } from './message/message'
-import { Header } from '../header/header'
-import { Footer } from '../footer/footer'
 // import { AddKey } from '../addKey/addKey'
 
 

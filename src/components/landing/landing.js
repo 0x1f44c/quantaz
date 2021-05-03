@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
+
 import './landing.scss'
-import { Header } from '../header/header'
-import { Footer } from '../footer/footer'
 
 class Landing extends Component {
   render() {
@@ -10,7 +10,7 @@ class Landing extends Component {
         <div className="container landing-container">
 
           <main className="main-landing-container">
-            <a className="cool-button" href="/keys">message</a>
+            <Link className="cool-button" to="/keys">message</Link>
             <section className="benefits-section">
               <ul className="list benefits-list">
                 <li className="benefit-item">

@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
+
 import './about.scss'
-import { Header } from '../header/header'
-import { Footer } from '../footer/footer'
 
 
 class About extends Component {

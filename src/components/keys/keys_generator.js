@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useDispatch } from 'react-redux'
+import { useSelector, useDispatch } from 'react-redux'
 import { useHistory } from "react-router-dom";
 import { generateKey } from 'openpgp/lightweight';
 
@@ -11,7 +11,7 @@ const KeysGenerator = () => {
     const [name, setName] = useState('Test');
     const [email, setEmail] = useState('test@email.com');
     const [error, setError] = useState('');
-    const [keys, setKeys] = useState({});
+    const [keys, setKeys] = useState(useSelector(state => state.keys));
 
     const dispatch = useDispatch();
     const history = useHistory();
@@ -35,7 +35,7 @@ const KeysGenerator = () => {
             })
         );
         setKeys({privateKey, publicKey});
-        // history.goBack();
+        history.goBack();
     }
 
     return (
@@ -66,13 +66,13 @@ const KeysGenerator = () => {
                     <textarea
                         rows="15"
                         cols="60"
-                        value={keys.privateKey}
+                        defaultValue={keys.private}
                     />
                     <p className="info-text-keys"> Public Key</p>
                     <textarea
                         rows="13"
                         cols="60"
-                        value={keys.publicKey}
+                        defaultValue={keys.public}
                     />
                 </main>
             </div>

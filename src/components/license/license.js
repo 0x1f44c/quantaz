@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
+
 import './license.scss'
-import { Header } from '../header/header'
-import { Footer } from '../footer/footer'
 
 class License extends Component {
     render() {

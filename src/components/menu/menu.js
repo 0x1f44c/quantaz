@@ -1,52 +1,39 @@
-import React, { Component } from 'react'
+import React from 'react'
+import { Link } from "react-router-dom"
+
 import './menu.scss'
 
 
-class Menu extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            active: this.props.menuToggle,
-        };
-    }
-    menuClose = () => {
-        this.props.closeMe()
-    }
-    shouldComponentUpdate(nextProps) {
-        if (this.state.active !== nextProps.menuToggle) {
-            this.setState({ active: nextProps.menuToggle })
-        };
-        return true;
-    }
-    render() {
-        return (
+const Menu = (props) => {
+    const items = [
+        {link: '/keys', text: 'authorization'},
+        {link: '/msg', text: 'messaging'},
+        {link: '/about', text: 'about us'},
+        {link: '/license', text: 'license'},
+        {link: '/contact', text: 'contact us'}
+    ];
 
-            // <div className="menu-open-hide">
-            <div className={this.state.active ? 'menu-open' : 'menu-open-hide'} >
-                <button onClick={this.menuClose} className="menu-close" type="button" aria-label="close menu">
-                    <svg className="close-menu-svg" width="50px" height="50px">
+    return (
+        <div className={props.menuToggle ? 'menu-open' : 'menu-open-hide'} >
+            <div className="menu-top-row">
+                <div className="day-night-container">
+                    <input type="checkbox" className="day-night" />
+                </div>
+                <button onClick={props.closeMe} className="menu-close" type="button" aria-label="close menu">
+                    <svg className="close-menu-svg" width="20px" height="20px">
                         <use className="icon-menu-close" href="./sprite.svg#icon-menu-close"></use>
                     </svg>
                 </button>
-                <ul className="list menu-list">
-                    <li className="menu-item">
-                        <a href="/keys" aria-label="autorization">autorization</a>
+            </div>
+            <ul className="list menu-list">
+                {items.map(item => (
+                    <li className="menu-item" key={item.link}>
+                        <Link to={item.link} onClick={props.closeMe}>{item.text}</Link>
                     </li>
-                    <li className="menu-item">
-                        <a href="/msg" aria-label="messaging">messaging</a>
-                    </li>
-                    <li className="menu-item">
-                        <a href="/about" aria-label="about us">about us</a>
-                    </li>
-                    <li className="menu-item">
-                        <a href="/license" aria-label="license">license</a></li>
-                    <li className="menu-item">
-                        <a href="/contact" aria-label="contact us">contact us</a>
-                    </li>
-                </ul>
-            </div >
-
-        )
-    }
+                ))}
+            </ul>
+        </div>
+    )
 }
+
 export { Menu }

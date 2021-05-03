@@ -1,5 +1,6 @@
-import React, { Component } from 'react'
+import React from 'react'
 import { useSelector } from 'react-redux';
+import { Link } from 'react-router-dom';
 
 import './keys.scss'
 
@@ -12,14 +13,14 @@ const Keys = () => {
                 <main className="main-landing-container main-info-pages">
                     <div className="keys-items-container">
 
-                        <a className="check-key-link" href="/msg">
+                        <Link className="check-key-link" to="/msg">
                             <button className="check-key-btn check-key-btn-active" type="button">
                                 <svg className="chek-key-svg" width="104px" height="104px">
                                     <use className="icon-pen-btn" href="./sprite.svg#icon-pen-button"></use>
                                 </svg>
                             </button>
-                        </a>
-                        <ul className="list ">
+                        </Link>
+                        <ul className="list">
                             <li className="keys-list-item">
                                 <p className="info-text-keys">In order to start messaging
                                 please provide your public
@@ -47,7 +48,7 @@ const Keys = () => {
                                 ></input>
                             </li>
                             <li className="keys-list-item generate-new-li">
-                                <a href="/keys/generate" className="generate-new link">or generate new</a>
+                                <Link to="/keys/generate" className="generate-new link">or generate new</Link>
                             </li>
 
                         </ul>
