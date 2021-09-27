@@ -1,18 +1,28 @@
 import React, { Component } from 'react'
 import './publicKeys.scss'
 import { AddKey } from '../addKey/addKey'
+import shortId from 'shortid'
 
 
 
 class PublicKeys extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            addKeyToggle: false,
-        };
-    }
+    state = {
+        publicKeys: [
+            {
+                publicKey: '64738',
+                key: shortId.generate(),
+            },
+            {
+                publicKey: '55555',
+                key: shortId.generate(),
+            }
+        ],
+        addKeyToggle: false,
+    };
+
     closeMe = () => {
         this.setState({ addKeyToggle: false })
+
     }
     addKeyOpen = () => {
         console.log('key-open');
@@ -24,23 +34,38 @@ class PublicKeys extends Component {
         console.log(this.state.addKeyToggle);
     }
 
-    render() {
-        return (
+    addPublicKey = ({ key }) => {
+        if (this.state.publicKeys.some(publicKey => publicKey === key)) {
+            console.log(alert(`${key} is already in your list`));
+            return;
+        }
+        const newKey = {
+            key: shortId.generate(),
+            publicKey: key,
+        }
+        const newKeys = this.state.publicKeys;
+        newKeys.push(newKey);
+        this.setState({ publicKeys: newKeys });
 
+    }
+
+    render() {
+        const { publicKeys } = this.state;
+        return (
             <section className="public-keys-section">
                 <h2 className="public-keys">public keys </h2>
-                <ul className="public-keys-wrapper list">
-                    <li className="public-keys-item">
-                        0x76521e72
-                  </li>
-                    <li className="public-keys-item">
-                        0x76521e72
-                  </li>
+                <ul className="public-keys-wrapper list">{
+                    publicKeys.map(({ publicKey, key }) => {
+                        return (
+                            this.state.publicKeys && <li className="public-keys-item" id={key} key={key}>{publicKey}</li>
+                        )
+                    }
+                    )}
                     <li className="public-keys-item">
                         <button onClick={this.addKeyOpen} className="public-key-add-btn" type="button">add</button>
                     </li>
                 </ul>
-                <AddKey addKeyToggle={this.state.addKeyToggle} closeMe={this.closeMe}></AddKey>
+                <AddKey addPublicKey={this.addPublicKey} addKeyToggle={this.state.addKeyToggle} closeMe={this.closeMe}></AddKey>
             </section>
 
         )
@@ -48,3 +73,5 @@ class PublicKeys extends Component {
 }
 
 export { PublicKeys }
+
+
