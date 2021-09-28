@@ -8,8 +8,18 @@ import { Message } from './message/message'
 
 
 class Messaging extends Component {
+  state = {
+    activeKey: '',
+  }
+
+  showActivePublicKeyMessaging = (publicKey) => {
+    this.setState({
+      activeKey: publicKey,
+    })
+  }
 
   render() {
+    const { activeKey } = this.state
     return (
       <div className="container">
 
@@ -20,9 +30,9 @@ class Messaging extends Component {
           <div className="main-wrapper">
             <main className="container-main container ">
               <div className="main-content-padding">
-                <PublicKeys></PublicKeys>
+                <PublicKeys showActivePublicKeyMessaging={this.showActivePublicKeyMessaging}></PublicKeys>
                 <section className="messages-section">
-                  <h2 className="messages">messages</h2>
+                  <h2 className="messages">messages from {activeKey}</h2>
                   <ul className="list messages-wrapper">
                     <Message />
                     <Message />

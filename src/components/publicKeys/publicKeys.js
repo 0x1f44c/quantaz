@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import './publicKeys.scss'
 import { AddKey } from '../addKey/addKey'
 import shortId from 'shortid'
+// import { Redirect } from 'react-router';
 
 
 
@@ -9,11 +10,11 @@ class PublicKeys extends Component {
     state = {
         publicKeys: [
             {
-                publicKey: '64738',
+                publicKey: '4444',
                 key: shortId.generate(),
             },
             {
-                publicKey: '55555',
+                publicKey: '5555',
                 key: shortId.generate(),
             }
         ],
@@ -35,7 +36,7 @@ class PublicKeys extends Component {
     }
 
     addPublicKey = ({ key }) => {
-        if (this.state.publicKeys.some(publicKey => publicKey === key)) {
+        if (this.state.publicKeys.some(publicKey => publicKey.publicKey === key)) {
             console.log(alert(`${key} is already in your list`));
             return;
         }
@@ -46,18 +47,26 @@ class PublicKeys extends Component {
         const newKeys = this.state.publicKeys;
         newKeys.push(newKey);
         this.setState({ publicKeys: newKeys });
-
+    }
+    onPublicKeyClick = (publicKey) => {
+        console.log(`click into ${publicKey}`);
+        this.props.showActivePublicKeyMessaging(publicKey);
     }
 
     render() {
         const { publicKeys } = this.state;
         return (
             <section className="public-keys-section">
-                <h2 className="public-keys">public keys </h2>
+                <h2 className="public-keys">public keys</h2>
                 <ul className="public-keys-wrapper list">{
                     publicKeys.map(({ publicKey, key }) => {
                         return (
-                            this.state.publicKeys && <li className="public-keys-item" id={key} key={key}>{publicKey}</li>
+                            this.state.publicKeys && <li className="public-keys-item" id={key} key={key}>
+                                <button
+                                    className="public-key-btn"
+                                    onClick={() => this.onPublicKeyClick(publicKey)}
+                                >{publicKey}</button>
+                            </li>
                         )
                     }
                     )}
@@ -74,4 +83,4 @@ class PublicKeys extends Component {
 
 export { PublicKeys }
 
-
+// (console.log(`click into ${publicKey}`))

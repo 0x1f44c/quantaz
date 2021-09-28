@@ -48,8 +48,18 @@
   fill: rgba(0, 0, 0, 0.5);
   margin-right: 6px;
 }
-.public-key-add-btn{
-  min-width:40px;
+.public-key-btn {
+  border: none;
+  background: transparent;
+  font-size: 18px;
+  cursor: pointer;
+}
+.public-key-btn:active {
+  transform: scale(1.2);
+  transition: 200ms ease-out;
+}
+.public-key-add-btn {
+  min-width: 40px;
   min-height: 20px;
   border-radius: 10%;
   // border:1px solid rgba(0, 0, 0, 0.5);
