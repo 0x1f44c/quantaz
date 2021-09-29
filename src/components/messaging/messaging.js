@@ -2,7 +2,10 @@ import React, { Component } from 'react'
 
 import './messaging.scss'
 import { PublicKeys } from '../publicKeys/publicKeys'
-import { Message } from './message/message'
+import { Messages } from './messages/messages'
+
+// import Messages from './messages/messages'
+// import { Message } from './message/message'
 // import { AddKey } from '../addKey/addKey'
 
 
@@ -31,34 +34,34 @@ class Messaging extends Component {
             <main className="container-main container ">
               <div className="main-content-padding">
                 <PublicKeys showActivePublicKeyMessaging={this.showActivePublicKeyMessaging}></PublicKeys>
-                <section className="messages-section">
-                  <h2 className="messages">messages from {activeKey}</h2>
-                  <ul className="list messages-wrapper">
-                    <Message />
-                    <Message />
-                    <Message />
-                    <Message />
-
-                    <li className="message-item">
-                      <p className="key-in-message key-in-message-2">0x7852e1f</p>
-                      <p className="text-message">my friend</p>
-                    </li>
-                  </ul>
-                  <div className="message-input-div">
-                    <input className="message-input" type="text" />
-                    <button className="message-btn" type="button" aria-label="send message button">send</button>
-                  </div>
-                </section>
+                <Messages activeKey={activeKey} ></Messages>
               </div>
             </main>
           </div>
         </div>
-
       </div>
-
-
     )
   }
 }
 
 export { Messaging }
+
+
+//  <section className="messages-section">
+//                   <h2 className="messages">messages from {activeKey}</h2>
+//                   <ul className="list messages-wrapper">
+//                     <Message />
+//                     <Message />
+//                     <Message />
+//                     <Message />
+
+//                     <li className="message-item">
+//                       <p className="key-in-message key-in-message-2">0x7852e1f</p>
+//                       <p className="text-message">my friend</p>
+//                     </li>
+//                   </ul>
+//                   <div className="message-input-div">
+//                     <input className="message-input" type="text" />
+//                     <button className="message-btn" type="button" aria-label="send message button">send</button>
+//                   </div>
+//                 </section> 
