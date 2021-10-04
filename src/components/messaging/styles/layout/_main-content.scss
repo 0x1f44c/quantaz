@@ -42,8 +42,6 @@
   flex-direction: row;
 }
 
-
-
 .messages {
   font-style: 300;
   font-weight: 200;
@@ -89,13 +87,26 @@
   border-radius: 20px;
   position: relative;
 }
+// .message-item:not(:first-child) {
+//   margin-top: 48px;
+// }
+// .message-item:nth-child(odd) {
+//   background: #82f4c4;
+// }
+// .message-item:nth-child(even) {
+//   margin-left: 320px;
+//   margin-right: 0px;
+//   background: #cee3ec;
+// }
+
+// new styles for messages!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 .message-item:not(:first-child) {
   margin-top: 48px;
 }
-.message-item:nth-child(odd) {
+.friend-message {
   background: #82f4c4;
 }
-.message-item:nth-child(even) {
+.my-message {
   margin-left: 320px;
   margin-right: 0px;
   background: #cee3ec;
@@ -122,7 +133,7 @@
   bottom: 8px;
 }
 .text-message::before {
-  content: "";
+  content: '';
   position: absolute;
   width: 303px;
   height: 1px;

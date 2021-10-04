@@ -16,6 +16,10 @@ class Messages extends Component {
             body: 'hi',
         },
         {
+            sender: 'me',
+            body: 'new test',
+        },
+        {
             sender: '222',
             body: 'bye',
         }],
