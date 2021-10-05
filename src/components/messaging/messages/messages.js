@@ -10,28 +10,32 @@ class Messages extends Component {
         messages: [{
             sender: '333',
             body: 'hello',
+            key: 1,
         },
         {
             sender: 'me',
             body: 'hi',
+            key: 2,
         },
         {
             sender: 'me',
             body: 'new test',
+            key: 3,
         },
         {
             sender: '222',
             body: 'bye',
+            key: 4,
         }],
     }
     render() {
 
         return (
             <section className="messages-section">
-                <h2 className="messages">messages from {this.props.activeKey}</h2>
+                <h2 className="messages">messages from {this.props.activeKey.publicKey}</h2>
                 <ul className="list messages-wrapper">{
-                    this.state.messages.map(({ sender, body }) => {
-                        return (<Message sender={sender} body={body} />)
+                    this.props.activeKey.messages.map(({ sender, body, key }) => {
+                        return (<Message sender={sender} body={body} key={key} />)
                     })
                 }
 
