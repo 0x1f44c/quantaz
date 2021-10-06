@@ -1,32 +1,11 @@
-
 import React, { Component } from 'react'
-
 import { Message } from '../message/message'
 
 
 
 class Messages extends Component {
     state = {
-        messages: [{
-            sender: '333',
-            body: 'hello',
-            key: 1,
-        },
-        {
-            sender: 'me',
-            body: 'hi',
-            key: 2,
-        },
-        {
-            sender: 'me',
-            body: 'new test',
-            key: 3,
-        },
-        {
-            sender: '222',
-            body: 'bye',
-            key: 4,
-        }],
+        messages: [],
     }
     render() {
 

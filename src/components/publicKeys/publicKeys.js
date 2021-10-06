@@ -1,24 +1,25 @@
 import React, { Component } from 'react'
 import './publicKeys.scss'
 import { AddKey } from '../addKey/addKey'
-import shortId from 'shortid'
-import axios from 'axios';
+
+// import axios from 'axios';
 // import { Redirect } from 'react-router';
 
 
 
 class PublicKeys extends Component {
     state = {
-        publicKeys: [],
+
         addKeyToggle: false,
+        loading: true,
     };
 
-    async componentDidMount() {
-        const response = await axios.get(`http://localhost:5555/publicKeys`)
-        this.setState({
-            publicKeys: response.data
-        })
-    }
+    // async componentDidMount() {
+    //     const response = await axios.get(`http://localhost:5555/publicKeys`)
+    //     this.setState({
+    //         publicKeys: response.data
+    //     })
+    // }
 
     closeMe = () => {
         this.setState({ addKeyToggle: false })
@@ -34,26 +35,35 @@ class PublicKeys extends Component {
         console.log(this.state.addKeyToggle);
     }
 
-    addPublicKey = ({ key }) => {
-        if (this.state.publicKeys.some(publicKey => publicKey.publicKey === key)) {
-            console.log(alert(`${key} is already in your list`));
-            return;
-        }
-        const newKey = {
-            key: shortId.generate(),
-            publicKey: key,
-            messages: []
-        }
-        const newKeys = this.state.publicKeys;
-        newKeys.push(newKey);
-        this.setState({ publicKeys: newKeys });
-    }
+    // addPublicKey = ({ key }) => {
+    //     if (this.state.publicKeys.some(publicKey => publicKey.publicKey === key)) {
+    //         console.log(alert(`${key} is already in your list`));
+    //         return;
+    //     }
+    //     const newKey = {
+    //         key: shortId.generate(),
+    //         publicKey: key,
+    //         messages: []
+    //     }
+    //     const newKeys = this.state.publicKeys;
+    //     newKeys.push(newKey);
+    //     this.setState({ publicKeys: newKeys });
+    // }
     onPublicKeyClick = (publicKey) => {
+        // this.setState({
+        //     loading: true,
+        // })
+        // setTimeout(() => {
+        //     this.props.showActivePublicKeyMessaging(publicKey);
+        //     this.setState({
+        //         loading: false,
+        //     })
+        // }, 1000);
         this.props.showActivePublicKeyMessaging(publicKey);
     }
 
     render() {
-        const { publicKeys } = this.state;
+        const { publicKeys } = this.props;
         return (
             <section className="public-keys-section">
                 <h2 className="public-keys">public keys</h2>
@@ -69,7 +79,7 @@ class PublicKeys extends Component {
                         <button onClick={this.addKeyOpen} className="public-key-add-btn" type="button">add</button>
                     </li>
                 </ul>
-                <AddKey addPublicKey={this.addPublicKey} addKeyToggle={this.state.addKeyToggle} closeMe={this.closeMe}></AddKey>
+                <AddKey addPublicKey={this.props.addPublicKey} addKeyToggle={this.state.addKeyToggle} closeMe={this.closeMe}></AddKey>
             </section>
 
         )
