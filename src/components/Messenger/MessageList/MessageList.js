@@ -1,9 +1,10 @@
 import React, { Component } from 'react'
-import { Message } from '../message/message'
+import { Message } from '../Message/Message'
+import { Sender } from '../Sender/Sender'
 
 
 
-class Messages extends Component {
+class MessageList extends Component {
     state = {
         messages: [],
     }
@@ -19,13 +20,10 @@ class Messages extends Component {
                 }
 
                 </ul>
-                <div className="message-input-div">
-                    <input className="message-input" type="text" />
-                    <button className="message-btn" type="button" aria-label="send message button">send</button>
-                </div>
+                <Sender />
             </section>
 
         )
     }
 }
-export { Messages };
+export { MessageList };

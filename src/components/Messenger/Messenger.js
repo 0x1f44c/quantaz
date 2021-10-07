@@ -1,12 +1,12 @@
 import React, { Component } from 'react'
 import axios from 'axios'
-import './messaging.scss'
-import { PublicKeys } from '../publicKeys/publicKeys'
-import { Messages } from './messages/messages'
+import './Messenger.scss'
+import { PublicKeyList } from './PublicKeyList/PublicKeyList'
+import { MessageList } from './MessageList/MessageList'
 import shortId from 'shortid'
 
 
-class Messaging extends Component {
+class Messenger extends Component {
   state = {
     publicKeys: [],
     activeKey: {
@@ -68,8 +68,8 @@ class Messaging extends Component {
           <div className="main-wrapper">
             <main className="container-main container ">
               <div className="main-content-padding">
-                <PublicKeys addPublicKey={this.addPublicKey} publicKeys={publicKeys} showActivePublicKeyMessaging={this.showActivePublicKeyMessaging}></PublicKeys>
-                {this.state.loading ? "Loading..." : <Messages activeKey={activeKey} ></Messages>}
+                <PublicKeyList addPublicKey={this.addPublicKey} publicKeys={publicKeys} showActivePublicKeyMessaging={this.showActivePublicKeyMessaging} />
+                {this.state.loading ? "Loading..." : <MessageList activeKey={activeKey} />}
               </div>
             </main>
           </div>
@@ -78,5 +78,5 @@ class Messaging extends Component {
     )
   }
 }
-export { Messaging }
+export { Messenger }
 

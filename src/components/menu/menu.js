@@ -6,11 +6,11 @@ import './menu.scss'
 
 const Menu = (props) => {
     const items = [
-        {link: '/keys', text: 'authorization'},
-        {link: '/msg', text: 'messaging'},
-        {link: '/about', text: 'about us'},
-        {link: '/license', text: 'license'},
-        {link: '/contact', text: 'contact us'}
+        { link: '/keys', text: 'authorization' },
+        { link: '/msg', text: 'messenger' },
+        { link: '/about', text: 'about us' },
+        { link: '/license', text: 'license' },
+        { link: '/contact', text: 'contact us' }
     ];
 
     return (

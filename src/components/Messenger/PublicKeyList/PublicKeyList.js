@@ -1,25 +1,19 @@
 import React, { Component } from 'react'
-import './publicKeys.scss'
-import { AddKey } from '../addKey/addKey'
+import './PublicKeyList.scss'
+import { AddKey } from '../AddKey/AddKey'
+import { PublicKey } from "../PublicKey/PublicKey"
 
 // import axios from 'axios';
 // import { Redirect } from 'react-router';
 
 
 
-class PublicKeys extends Component {
+class PublicKeyList extends Component {
     state = {
 
         addKeyToggle: false,
         loading: true,
     };
-
-    // async componentDidMount() {
-    //     const response = await axios.get(`http://localhost:5555/publicKeys`)
-    //     this.setState({
-    //         publicKeys: response.data
-    //     })
-    // }
 
     closeMe = () => {
         this.setState({ addKeyToggle: false })
@@ -35,30 +29,7 @@ class PublicKeys extends Component {
         console.log(this.state.addKeyToggle);
     }
 
-    // addPublicKey = ({ key }) => {
-    //     if (this.state.publicKeys.some(publicKey => publicKey.publicKey === key)) {
-    //         console.log(alert(`${key} is already in your list`));
-    //         return;
-    //     }
-    //     const newKey = {
-    //         key: shortId.generate(),
-    //         publicKey: key,
-    //         messages: []
-    //     }
-    //     const newKeys = this.state.publicKeys;
-    //     newKeys.push(newKey);
-    //     this.setState({ publicKeys: newKeys });
-    // }
     onPublicKeyClick = (publicKey) => {
-        // this.setState({
-        //     loading: true,
-        // })
-        // setTimeout(() => {
-        //     this.props.showActivePublicKeyMessaging(publicKey);
-        //     this.setState({
-        //         loading: false,
-        //     })
-        // }, 1000);
         this.props.showActivePublicKeyMessaging(publicKey);
     }
 
@@ -70,8 +41,8 @@ class PublicKeys extends Component {
                 <ul className="public-keys-wrapper list">{
                     publicKeys.map(publicKey => {
                         return (
-                            <li onClick={() => this.onPublicKeyClick(publicKey)}
-                                className="public-keys-item" key={publicKey.publicKey} id={publicKey.key}>{publicKey.publicKey} </li>
+                            <PublicKey publicKey={publicKey}
+                                onPublicKeyClick={this.onPublicKeyClick} />
                         )
                     })
                 }
@@ -86,6 +57,6 @@ class PublicKeys extends Component {
     }
 }
 
-export { PublicKeys }
+export { PublicKeyList }
 
 

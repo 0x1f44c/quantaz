@@ -9,7 +9,7 @@ import { history } from './utils/history'
 
 // Component imports
 import { Landing } from './components/landing/landing'
-import { Messaging } from './components/messaging/messaging'
+import { Messenger } from './components/Messenger/Messenger'
 import { About } from './components/about/about'
 import { License } from './components/license/license'
 import { Contact } from './components/contact_us/contact'
@@ -26,7 +26,7 @@ class App extends Component {
               <Landing />
             </Route>
             <Route exact path="/msg">
-              <Messaging />
+              <Messenger />
             </Route>
             <Route exact path="/about">
               <About />

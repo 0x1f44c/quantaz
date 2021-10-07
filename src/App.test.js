@@ -9,6 +9,6 @@ test('renders "Login" link', () => {
       <App />
     </BrowserRouter>
   )
-  const linkElement = getByText(/Messaging/i)
+  const linkElement = getByText(/Messenger/i)
   expect(linkElement).toBeInTheDocument()
 })
