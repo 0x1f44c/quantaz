@@ -3,6 +3,7 @@ import axios from 'axios'
 import './Messenger.scss'
 import { PublicKeyList } from './PublicKeyList/PublicKeyList'
 import { MessageList } from './MessageList/MessageList'
+// import { Sender } from './Sender/Sender'
 import shortId from 'shortid'
 
 
@@ -26,7 +27,7 @@ class Messenger extends Component {
       this.setState({
         loading: false,
       })
-    }, 1000)
+    }, 500)
 
   }
   showActivePublicKeyMessaging = (publicKey) => {
@@ -56,6 +57,20 @@ class Messenger extends Component {
     newKeys.push(newKey);
     this.setState({ publicKeys: newKeys });
   }
+  addNewMessage = (message) => {
+    // debugger;
+    const oldMessages = this.state.activeKey.messages;
+    oldMessages.push({
+      "sender": "me",
+      "body": message,
+      "key": shortId.generate(),
+    })
+    this.setState({
+      activeKey: {
+        messages: oldMessages,
+      }
+    })
+  }
 
   render() {
     const { activeKey, publicKeys } = this.state
@@ -69,7 +84,8 @@ class Messenger extends Component {
             <main className="container-main container ">
               <div className="main-content-padding">
                 <PublicKeyList addPublicKey={this.addPublicKey} publicKeys={publicKeys} showActivePublicKeyMessaging={this.showActivePublicKeyMessaging} />
-                {this.state.loading ? "Loading..." : <MessageList activeKey={activeKey} />}
+                {this.state.loading ? "Loading..." : <MessageList activeKey={activeKey} addNewMessage={this.addNewMessage} />}
+                {/* <Sender /> */}
               </div>
             </main>
           </div>

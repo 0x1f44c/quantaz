@@ -31,7 +31,6 @@ class AddKey extends Component {
         console.log('new key');
         this.props.addPublicKey(this.state);
         this.addKeyClose();
-
     }
     reset = () => {
         this.setState({ key: '' });

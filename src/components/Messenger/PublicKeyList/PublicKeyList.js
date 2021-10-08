@@ -42,6 +42,7 @@ class PublicKeyList extends Component {
                     publicKeys.map(publicKey => {
                         return (
                             <PublicKey publicKey={publicKey}
+                                key={publicKey.key}
                                 onPublicKeyClick={this.onPublicKeyClick} />
                         )
                     })

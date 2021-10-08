@@ -18,9 +18,8 @@ class MessageList extends Component {
                         return (<Message sender={sender} body={body} key={key} />)
                     })
                 }
-
                 </ul>
-                <Sender />
+                <Sender addNewMessage={this.props.addNewMessage} />
             </section>
 
         )

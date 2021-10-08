@@ -6,7 +6,7 @@ class PublicKey extends Component {
         const { publicKey } = this.props;
         return (
             <li onClick={() => this.props.onPublicKeyClick(publicKey)}
-                className="public-keys-item" key={publicKey.publicKey} id={publicKey.key}>{publicKey.publicKey} </li>
+                className="public-keys-item" id={publicKey.key}>{publicKey.publicKey} </li>
 
         )
     }
