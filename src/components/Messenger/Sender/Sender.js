@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import shortId from 'shortid'
+import "./Sender.scss"
 class Sender extends Component {
     state = {
         enteredMessage: "",

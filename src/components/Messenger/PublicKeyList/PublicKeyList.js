@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
-import './PublicKeyList.scss'
 import { AddKey } from '../AddKey/AddKey'
 import { PublicKey } from "../PublicKey/PublicKey"
+import './PublicKeyList.scss'
 
 // import axios from 'axios';
 // import { Redirect } from 'react-router';
@@ -47,7 +47,7 @@ class PublicKeyList extends Component {
                         )
                     })
                 }
-                    <li className="public-keys-item">
+                    <li className="public-key-item">
                         <button onClick={this.addKeyOpen} className="public-key-add-btn" type="button">add</button>
                     </li>
                 </ul>

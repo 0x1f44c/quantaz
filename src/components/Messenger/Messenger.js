@@ -3,8 +3,10 @@ import axios from 'axios'
 import './Messenger.scss'
 import { PublicKeyList } from './PublicKeyList/PublicKeyList'
 import { MessageList } from './MessageList/MessageList'
+import { Search } from './Search/Search'
 // import { Sender } from './Sender/Sender'
 import shortId from 'shortid'
+
 
 
 class Messenger extends Component {
@@ -77,9 +79,7 @@ class Messenger extends Component {
     return (
       <div className="container">
         <div className="container-for-padding">
-          <div className="search-wrapper">
-            <input className="search" />
-          </div>
+          <Search />
           <div className="main-wrapper">
             <main className="container-main container ">
               <div className="main-content-padding">

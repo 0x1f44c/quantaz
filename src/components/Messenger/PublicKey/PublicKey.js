@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import "./PublicKey.scss"
 
 class PublicKey extends Component {
 
@@ -6,7 +7,7 @@ class PublicKey extends Component {
         const { publicKey } = this.props;
         return (
             <li onClick={() => this.props.onPublicKeyClick(publicKey)}
-                className="public-keys-item" id={publicKey.key}>{publicKey.publicKey} </li>
+                className="public-key-item" id={publicKey.key}>{publicKey.publicKey} </li>
 
         )
     }
