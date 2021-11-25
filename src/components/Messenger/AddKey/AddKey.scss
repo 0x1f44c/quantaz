@@ -1,29 +1,44 @@
-.add-key-modal-wrapper{
-    z-index: 1;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    position:absolute;
+.add-key-modal-wrapper {
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
 }
-.add-key-modal-wrapper-hide{
-    display: none;
+.add-key-modal-wrapper-hide {
+  display: none;
 }
-.add-key-modal{
-    position:relative;
- width: 400px;
-   height: 200px;
-   background:rgba(0, 58, 68, 1);
-   color:black;
-   border-radius: 10px;
-    padding: 10px;
-    color:white;
-    font-size: 24px;
+.form {
+  margin-top: 40px;
 }
-.add-key-close-btn{
-    width: 30px;
-    height: 40px;
-    background: white;
-    position: absolute;
-    right:0;
-    top:0;
+.input {
+  margin-left: 20px;
+}
+.add-key-modal {
+  position: relative;
+  width: 400px;
+  height: 200px;
+  background: rgb(255, 255, 255);
+  border-radius: 10px;
+  border: 1px solid black;
+  padding: 10px;
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+}
+.add-key-button {
+  margin-left: 20px;
+  width: 60px;
+  height: 20px;
+  color: #000;
+  background: rgb(132, 169, 194);
+  border-radius: 5px;
+}
+.add-key-close-btn {
+  width: 40px;
+  height: 20px;
+  background: rgb(255, 0, 0);
+
+  position: absolute;
+  right: 0;
+  top: 0;
 }

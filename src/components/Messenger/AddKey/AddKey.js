@@ -1,60 +1,50 @@
-import React, { Component } from 'react'
+import React from 'react'
 import './AddKey.scss'
+import { useState, useEffect } from 'react'
+
+function AddKey(props) {
+
+    const [active, setActive] = useState(!props.addKeyToggle)
+    const [key, setKey] = useState('');
+
+    useEffect(() => {
+        setActive(props.addKeyToggle);
+    }, [active, props.addKeyToggle])
 
 
-
-class AddKey extends Component {
-    state = {
-        active: this.props.addKeyToggle,
-        key: '',
-    };
-
-
-    shouldComponentUpdate(nextProps, nextState) {
-        if (this.state.active !== nextProps.addKeyToggle) {
-            this.setState({ active: nextProps.addKeyToggle })
-        } return true;
+    const addKeyClose = () => {
+        props.closeMe();
     }
 
-    addKeyClose = () => {
-        this.props.closeMe();
-        this.reset();
-
-    }
-
-    handleChange = event => {
-        this.setState({ key: event.currentTarget.value })
-    }
-
-    handleSubmit = event => {
+    const handleSubmit = event => {
         event.preventDefault();
         console.log('new key');
-        this.props.addPublicKey(this.state);
-        this.addKeyClose();
+        props.addPublicKey({ active, key });
+        addKeyClose();
     }
-    reset = () => {
-        this.setState({ key: '' });
+    const reset = () => {
+        setKey('');
     }
-    render() {
-        return (
-            <div className={this.state.active ? 'add-key-modal-wrapper' : 'add-key-modal-wrapper-hide'}>
-                <div className="add-key-modal">
-                    <button onClick={this.addKeyClose} className="add-key-close-btn" type="button">X</button>
-                    <form onSubmit={this.handleSubmit}>
-                        <label>enter the key
-                            <input
-                                type="text"
-                                onChange={this.handleChange}
-                                value={this.state.key}>
-                            </input>
-                        </label>
-                        <button type="submit">Add key</button>
-                    </form>
-                </div>
+
+    return (
+        <div className={active ? 'add-key-modal-wrapper' : 'add-key-modal-wrapper-hide'}>
+            <div className="add-key-modal">
+                <button onClick={addKeyClose} className="add-key-close-btn" type="button">X</button>
+                <form className="form" onSubmit={handleSubmit}>
+                    <label>enter the key
+                        <input
+                            className="input"
+                            type="text"
+                            onChange={event => setKey(event.currentTarget.value)}
+                            value={key}>
+                        </input>
+                    </label>
+                    <button className="add-key-button" type="submit">Add key</button>
+                </form>
             </div>
-        )
-    }
+        </div>
+    )
+
 }
 export { AddKey }
-
 
