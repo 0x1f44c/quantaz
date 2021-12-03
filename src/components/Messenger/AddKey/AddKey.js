@@ -14,6 +14,7 @@ function AddKey(props) {
 
     const addKeyClose = () => {
         props.closeMe();
+        reset();
     }
 
     const handleSubmit = event => {
