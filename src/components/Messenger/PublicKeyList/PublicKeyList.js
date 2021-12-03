@@ -3,11 +3,6 @@ import { AddKey } from '../AddKey/AddKey'
 import { PublicKey } from "../PublicKey/PublicKey"
 import './PublicKeyList.scss'
 
-// import axios from 'axios';
-// import { Redirect } from 'react-router';
-
-
-
 class PublicKeyList extends Component {
     state = {
 
