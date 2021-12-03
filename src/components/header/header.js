@@ -1,47 +1,42 @@
-import React, { Component } from 'react'
+import React from 'react'
+import { useState } from 'react'
 import { Link } from 'react-router-dom'
-
-import './header.scss'
 import { Menu } from '../menu/menu'
+import './header.scss'
 
 
-class Header extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            menuToggle: false,
-        };
+function Header() {
+    const [menuToggle, setMenuToggle] = useState(false);
+    const closeMe = () => {
+        setMenuToggle(false);
     }
-    closeMe = () => {
-        this.setState({ menuToggle: false })
-    }
-    menuOpen = () => {
+    const menuOpen = () => {
         console.log('toggle');
-        if (this.state.menuToggle === true) {
-            this.setState({ menuToggle: false })
+        if (menuToggle === true) {
+            setMenuToggle(false)
         } else {
-            this.setState({ menuToggle: true })
+            setMenuToggle(true)
         }
-        console.log(this.state.menuToggle);
+        console.log(menuToggle);
     }
 
-    render() {
-        return (
-            <header className="header-container ">
-                <div className="landing-logo-div">
-                    <h1>
-                        <Link className="link header-logo-landing" to="/">PG</Link>
-                    </h1>
-                    <p className="landing-logo-messaging">Messaging</p>
-                </div>
-                <button onClick={this.menuOpen} className="menu-btn" type="button" aria-label="menu button">
-                    <svg className="menu-svg" width="40px" height="40px">
-                        <use className="icon-menu" href="./sprite.svg#icon-menu-btn"></use>
-                    </svg>
-                </button>
-                <Menu menuToggle={this.state.menuToggle} menuOpen={this.menuOpen} closeMe={this.closeMe}></Menu>
-            </header>
-        )
-    }
+    return (
+        <header className="header-container ">
+            <div className="landing-logo-div">
+                <h1>
+                    <Link className="link header-logo-landing" to="/">PG</Link>
+                </h1>
+                <p className="landing-logo-messaging">Messaging</p>
+            </div>
+            <button onClick={menuOpen} className="menu-btn" type="button" aria-label="menu button">
+                <svg className="menu-svg" width="40px" height="40px">
+                    <use className="icon-menu" href="./sprite.svg#icon-menu-btn"></use>
+                </svg>
+            </button>
+            <Menu menuToggle={menuToggle} menuOpen={menuOpen} closeMe={closeMe}></Menu>
+        </header>
+    )
 }
 export { Header }
+
+

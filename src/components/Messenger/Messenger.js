@@ -17,7 +17,7 @@ class Messenger extends Component {
       messages: []
     },
   }
-  async componentDidMount() {
+ componentDidMount() {
     this.setState({
       loading: true,
     })
