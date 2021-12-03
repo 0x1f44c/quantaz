@@ -60,7 +60,6 @@ class Messenger extends Component {
     this.setState({ publicKeys: newKeys });
   }
   addNewMessage = (message) => {
-    // debugger;
     const oldMessages = this.state.activeKey.messages;
     oldMessages.push({
       "sender": "me",
@@ -95,4 +94,7 @@ class Messenger extends Component {
   }
 }
 export { Messenger }
+
+
+
 

@@ -8,7 +8,6 @@ class Search extends Component {
                     <input className="search"
                         placeholder="enter public key" />
                 </form>
-
             </div>
         )
     }

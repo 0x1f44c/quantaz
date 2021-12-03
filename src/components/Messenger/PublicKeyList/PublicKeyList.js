@@ -1,58 +1,52 @@
-import React, { Component } from 'react'
+import React from 'react'
+import { useState } from 'react'
 import { AddKey } from '../AddKey/AddKey'
 import { PublicKey } from "../PublicKey/PublicKey"
 import './PublicKeyList.scss'
 
-class PublicKeyList extends Component {
-    state = {
+function PublicKeyList(props) {
 
-        addKeyToggle: false,
-        loading: true,
-    };
+    const [addKeyToggle, setAddKeyToggle] = useState(false);
+    // const [loading, setLoading] = useState(true);/maby we will use it in future for loader for ex.
 
-    closeMe = () => {
-        this.setState({ addKeyToggle: false })
+    const closeMe = () => {
+        setAddKeyToggle(false);
     }
-
-    addKeyOpen = () => {
+    const addKeyOpen = () => {
         console.log('key-open');
-        if (this.state.addKeyToggle === true) {
-            this.setState({ addKeyToggle: false })
+        if (addKeyToggle === true) {
+            setAddKeyToggle(false)
         } else {
-            this.setState({ addKeyToggle: true })
+            setAddKeyToggle(true)
         }
-        console.log(this.state.addKeyToggle);
+        console.log(addKeyToggle);
     }
 
-    onPublicKeyClick = (publicKey) => {
-        this.props.showActivePublicKeyMessaging(publicKey);
+    const onPublicKeyClick = (publicKey) => {
+        props.showActivePublicKeyMessaging(publicKey);
     }
 
-    render() {
-        const { publicKeys } = this.props;
-        return (
-            <section className="public-keys-section">
-                <h2 className="public-keys">public keys</h2>
-                <ul className="public-keys-wrapper list">{
-                    publicKeys.map(publicKey => {
-                        return (
-                            <PublicKey publicKey={publicKey}
-                                key={publicKey.key}
-                                onPublicKeyClick={this.onPublicKeyClick} />
-                        )
-                    })
-                }
-                    <li className="public-key-item">
-                        <button onClick={this.addKeyOpen} className="public-key-add-btn" type="button">add</button>
-                    </li>
-                </ul>
-                <AddKey addPublicKey={this.props.addPublicKey} addKeyToggle={this.state.addKeyToggle} closeMe={this.closeMe}></AddKey>
-            </section>
-
-        )
-    }
+    const { publicKeys } = props;
+    return (
+        <section className="public-keys-section">
+            <h2 className="public-keys">public keys</h2>
+            <ul className="public-keys-wrapper list">{
+                publicKeys.map(publicKey => {
+                    return (
+                        <PublicKey publicKey={publicKey}
+                            key={publicKey.key}
+                            onPublicKeyClick={onPublicKeyClick} />
+                    )
+                })
+            }
+                <li className="public-key-item">
+                    <button onClick={addKeyOpen} className="public-key-add-btn" type="button">add</button>
+                </li>
+            </ul>
+            <AddKey addPublicKey={props.addPublicKey} addKeyToggle={addKeyToggle} closeMe={closeMe}></AddKey>
+        </section>
+    )
 }
 
 export { PublicKeyList }
-
 
