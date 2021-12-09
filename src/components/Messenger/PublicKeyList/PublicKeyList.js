@@ -40,7 +40,7 @@ function PublicKeyList(props) {
                 })
             }
                 <li className="public-key-item">
-                    <button onClick={addKeyOpen} className="public-key-add-btn" type="button">add</button>
+                    <button onClick={addKeyOpen} className="public-key-add-btn" type="button">add key</button>
                 </li>
             </ul>
             <AddKey addPublicKey={props.addPublicKey} addKeyToggle={addKeyToggle} closeMe={closeMe}></AddKey>

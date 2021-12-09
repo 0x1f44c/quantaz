@@ -2,6 +2,7 @@
   "publicKeys":[
 
 { "publicKey":"257268",
+  "userName":"Darian",
   "key":"1",
   "messages":[
         {
@@ -28,12 +29,13 @@
 },
 {   
     "publicKey":"333788",
+    "userName":"Dan",
     "key":"2",
     "messages":[
        {
             "sender": "me",
             "body": "hello",
-           "key":"1"
+            "key":"1"
         },
         {
            "sender": "333788",
@@ -54,6 +56,7 @@
 },
  { 
     "publicKey":"990075",
+    "userName":"Dolly",
     "key":"3",
     "messages": [
           {

@@ -13,8 +13,8 @@ import { Messenger } from './components/Messenger/Messenger'
 import { About } from './components/about/about'
 import { License } from './components/license/license'
 import { Contact } from './components/contact_us/contact'
-import { Keys } from './components/keys/keys'
-import { KeysGenerator } from './components/keys/keys_generator'
+import { Login } from './components/login/login'
+import { SignUp } from './components/signUp/signUp'
 
 class App extends Component {
   render() {
@@ -37,11 +37,11 @@ class App extends Component {
             <Route exact path="/contact">
               <Contact />
             </Route>
-            <Route exact path="/keys">
-              <Keys />
+            <Route exact path="/login">
+              <Login />
             </Route>
-            <Route path="/keys/generate" >
-              <KeysGenerator />
+            <Route path="/keys/signup" >
+              <SignUp />
             </Route>
           </Switch>
         </div>

@@ -2,9 +2,9 @@ import React from 'react'
 import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 
-import './keys.scss'
+import './login.scss'
 
-const Keys = () => {
+const Login = () => {
     const keys = useSelector(state => state.keys);
 
     return (
@@ -23,11 +23,11 @@ const Keys = () => {
                         <ul className="list">
                             <li className="keys-list-item">
                                 <p className="info-text-keys">In order to start messaging
-                                please provide your public
-                                and private keys.
-                                You should generate them
-                                using GPG (see instructions here)
-                    </p>
+                                    please provide your public
+                                    and private keys.
+                                    You should generate them
+                                    using GPG (see instructions here)
+                                </p>
                             </li>
 
                             <li className="keys-list-item">
@@ -58,4 +58,4 @@ const Keys = () => {
         </div>
     )
 }
-export { Keys }
+export { Login }

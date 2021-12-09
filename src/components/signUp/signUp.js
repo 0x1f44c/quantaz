@@ -5,9 +5,8 @@ import { generateKey } from 'openpgp/lightweight';
 
 import { keysUpdated } from '../../redux/userAuthKey/keysSlice'
 
-import './keys.scss';
 
-const KeysGenerator = () => {
+const SignUp = () => {
     const [name, setName] = useState('Test');
     const [email, setEmail] = useState('test@email.com');
     const [error, setError] = useState('');
@@ -80,4 +79,4 @@ const KeysGenerator = () => {
     )
 }
 
-export { KeysGenerator }
+export { SignUp }
