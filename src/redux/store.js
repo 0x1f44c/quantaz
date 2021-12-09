@@ -1,6 +1,5 @@
 import { configureStore } from '@reduxjs/toolkit';
-
-import keysReducer from './slices/keysSlice';
+import keysReducer from './userAuthKey/keysSlice';
 
 export default configureStore({
     reducer: {

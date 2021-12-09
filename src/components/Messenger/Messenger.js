@@ -7,8 +7,6 @@ import { Search } from './Search/Search'
 // import { Sender } from './Sender/Sender'
 import shortId from 'shortid'
 
-
-
 class Messenger extends Component {
   state = {
     publicKeys: [],
@@ -17,7 +15,7 @@ class Messenger extends Component {
       messages: []
     },
   }
- componentDidMount() {
+  componentDidMount() {
     this.setState({
       loading: true,
     })

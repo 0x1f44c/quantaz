@@ -22,7 +22,7 @@ function Sender(props) {
                     className="message-input"
                     type="text"
                     placeholder="enter your message"
-                    onChange={(event) => event.currentTarget.value}
+                    onChange={event => setEnteredMessage(event.currentTarget.value)}
                     value={enteredMessage}
                 />
                 <button className="message-btn" type="submit" aria-label="send message button">send</button>

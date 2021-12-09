@@ -8,7 +8,7 @@ import { Router } from 'react-router-dom'
 import './index.css'
 import * as serviceWorker from './serviceWorker'
 import { history } from './utils/history'
-import store from './store'
+import store from './redux/store'
 
 // Component imports
 import App from './app'
@@ -19,9 +19,9 @@ ReactDOM.render(
   <React.StrictMode>
     <Provider store={store}>
       <Router history={history}>
-          <Header />
-            <App />
-          <Footer />
+        <Header />
+        <App />
+        <Footer />
       </Router>
     </Provider>
   </React.StrictMode>,

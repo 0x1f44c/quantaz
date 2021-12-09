@@ -3,7 +3,7 @@ import { useSelector, useDispatch } from 'react-redux'
 import { useHistory } from "react-router-dom";
 import { generateKey } from 'openpgp/lightweight';
 
-import { keysUpdated } from './../../slices/keysSlice'
+import { keysUpdated } from '../../redux/userAuthKey/keysSlice'
 
 import './keys.scss';
 
@@ -22,11 +22,11 @@ const KeysGenerator = () => {
             setError('Fill in both fields to generate key');
             return;
         }
-        const { privateKeyArmored: privateKey, publicKeyArmored: publicKey} =
-        await generateKey({
-            curve: 'curve25519',
-            userIDs: [{ name, email }]
-        });
+        const { privateKeyArmored: privateKey, publicKeyArmored: publicKey } =
+            await generateKey({
+                curve: 'curve25519',
+                userIDs: [{ name, email }]
+            });
 
         dispatch(
             keysUpdated({
@@ -34,7 +34,7 @@ const KeysGenerator = () => {
                 public: publicKey
             })
         );
-        setKeys({privateKey, publicKey});
+        setKeys({ privateKey, publicKey });
         history.goBack();
     }
 
@@ -48,7 +48,7 @@ const KeysGenerator = () => {
                                 className="keys-input"
                                 type="text"
                                 value={name}
-                                onChange={e=>setName(e.target.value)}
+                                onChange={e => setName(e.target.value)}
                             ></input>
                         </label>
                         <label className="info-text-keys">&nbsp;Email&nbsp;
@@ -56,7 +56,7 @@ const KeysGenerator = () => {
                                 className="keys-input"
                                 type="text"
                                 value={email}
-                                onChange={e=>setEmail(e.target.value)}
+                                onChange={e => setEmail(e.target.value)}
                             ></input>
                         </label>
                         <button type="submit">Generate</button>
