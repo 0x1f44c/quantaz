@@ -7,7 +7,7 @@ function Landing() {
     <div className="bg-for-landing">
       <div className="container landing-container">
         <main className="main-landing-container">
-          <Link className="cool-button" to="/keys">message</Link>
+          <Link className="cool-button" to="/login">message</Link>
           <section className="benefits-section">
             <ul className="list benefits-list">
               <li className="benefit-item">

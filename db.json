@@ -16,7 +16,7 @@
            "key":"2"
         },
         {
-            "sender": "me",
+           "sender": "me",
            "body": "new test",
            "key":"3"
         },
